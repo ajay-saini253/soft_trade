@@ -185,7 +185,7 @@ const Header = () => {
 
                   <li className="menu-item-has-children megamenu">
                     <Link onClick={clickHandler} to="/"><span>Products</span></Link>
-                    <ul className="submenu">
+                    {/* <ul className="submenu">
                       <li>
                         <div className="mega_menu_wrapper">
                           <div className="container">
@@ -316,7 +316,7 @@ const Header = () => {
                           </div>
                         </div>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
 
 
