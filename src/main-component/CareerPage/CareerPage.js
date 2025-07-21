@@ -128,7 +128,7 @@ const CareerPage = (props) => {
                                     Your browser does not support the video.
                                 </video>
                             </div>
-                            {/* <h2 className="title">innomax</h2> */}
+                            {/* <h2 className="title">Soft Trade</h2> */}
                         </div>
                     </div>
                 </div>
