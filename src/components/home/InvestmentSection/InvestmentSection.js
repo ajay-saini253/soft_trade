@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 // import icon1 from "../../images/icon/check-mark.png";
-// import icon2 from "../../images/icon/arrow-black.png";
+// import icon2 from "../../../images/icon/arrow-black.png";
 // import icon3 from '../../../images/hero/mobile-sms.png';
 import hImg1 from "../../../images/hero/ONDC.png";
 // import hImg2 from '../../../images/hero/hero-img05.png';
@@ -98,40 +98,39 @@ const InvestmentSection = () => {
                   duration={1400}
                   delay={9}
                 >
-                  <div className="d-flex px-5 gap-3 mt-50 gradient-buttons-wrapper">
+
+
+
+
+
+
+                  <div className="d-flex ps-lg-3 justify-content-evenly gradient-buttons-wrapper">
                     <div
                       className="xb-btn wow fadeInUp"
                       data-wow-delay="450ms"
                       data-wow-duration="600ms"
                     >
-                      <Link
-                        to="/"
-                        onClick={ClickHandler}
-                        className="thm-btn thm-btn--three gradient-btn"
-                      >
-                        Join Us
-                        {/* <span>
-          <img className="img--one" src={icon2} alt="" />
-          <img className="img--two" src={icon2} alt="" />
-        </span> */}
-                      </Link>
+                       <div className="  pos-rel ">
+                <div className="xb-btn ">
+                    <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops "> Join Us </Link>
+                </div>
+            </div>
                     </div>
                     <div
                       className="xb-btn wow fadeInUp"
                       data-wow-delay="450ms"
                       data-wow-duration="600ms"
                     >
-                      <Link
-                        to="/"
-                        onClick={ClickHandler}
-                        className="thm-btn thm-btn--three bg-white text-black " id="abcd"
-                      >
-                        Learn More
+                     <div className="  pos-rel ">
+                <div className="xb-btn ">
+                    <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops ">Learn More</Link>
+                </div>
+            </div>
                         {/* <span>
           <img className="img--one" src={icon2} alt="" />
           <img className="img--two" src={icon2} alt="" />
         </span> */}
-                      </Link>
+                   
                     </div>
                   </div>
                 </Fade>

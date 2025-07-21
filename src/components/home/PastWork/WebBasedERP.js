@@ -13,7 +13,7 @@ const WebBaseERP = (props) => {
     }
 
     return (
-        <section className="cta  pos-rel z-1 pt-60 pb-150 o-hidden" style={{
+        <section className="cta  pos-rel z-1 pt-60 pb-60 o-hidden" style={{
     backgroundImage: `url(${cta2})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',

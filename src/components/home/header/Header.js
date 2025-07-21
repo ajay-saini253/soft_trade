@@ -7,10 +7,10 @@ import icon4 from '../../../images/icon/m_03.svg';
 import icon5 from '../../../images/icon/m_04.svg';
 import logo from '../../../images/logo/softtrade-infotech-pvt-ltd-ambab.webp';
 import logo2 from '../../../images/logo/softtrade-infotech-pvt-ltd-ambab.webp';
-import clogo1 from '../../../images/logo/client-logo.svg';
-import clogo2 from '../../../images/logo/client-logo2.svg';
-import avatar from '../../../images/bg/avatar.png';
-import quote from '../../../images/icon/quote.png';
+// import clogo1 from '../../../images/logo/client-logo.svg';
+// import clogo2 from '../../../images/logo/client-logo2.svg';
+// import avatar from '../../../images/bg/avatar.png';
+// import quote from '../../../images/icon/quote.png';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
 // ✅ Replace these with your actual image paths

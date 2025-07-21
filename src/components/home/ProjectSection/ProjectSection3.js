@@ -6,14 +6,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import icon1 from '../../../images/icon/prev-icon.png'
-import icon2 from '../../../images/icon/next-icon.png'
+// import icon1 from '../../../images/icon/prev-icon.png'
+// import icon2 from '../../../images/icon/next-icon.png'
 import erpImg1 from "../../../images/service/Mobile_erp.png";
 import erpImg2 from "../../../images/service/Desktop_erp.png";
 import erpImg3 from "../../../images/service/cloud_erp.png";
 import erpImg4 from "../../../images/service/web_erps.png";
 
-import tImg1 from "../../../images/testimonial/da-tes-img.png";  // Replace with real customer photos
+// import tImg1 from "../../../images/testimonial/da-tes-img.png"; 
 
 
 const erpSolutions = [
@@ -112,7 +112,8 @@ const ProjectSecton3 = () => {
 
 
   return (
-    <section className="testimonial pt-50 pb-50" style={{ background: "#fefaf2" }}>
+    // <section className="testimonial pt-50 pb-50" style={{ background: "#fefaf2" }}>
+    <section className="testimonial pt-50 pb-50">
       <div className="container">
         <div className="da-sec-titlte text-center mb-60">
           <h2 className="title text-black fw-normal">Our ERP Solutions</h2>

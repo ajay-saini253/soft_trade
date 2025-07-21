@@ -73,7 +73,8 @@ const FeatureItemBottom = ({ icon, title, content }) => (
 
 const ValuesSection = () => {
   return (
-    <section className=" ValuesSection feature pt-50 pb-50 o-hidden" id="features"  style={{ backgroundColor: '#f6f0e6' }}>
+    // <section className=" ValuesSection feature pt-50 pb-50 o-hidden" id="features"  style={{ backgroundColor: '#f6f0e6' }}>
+     <section className=" ValuesSection feature pt-50 pb-50 o-hidden" id="features">
       <div className="container">
         <div className="xb-feature-wrap pos-rel">
           <div className="sec-title--two sec-title--four text-center mb-65">

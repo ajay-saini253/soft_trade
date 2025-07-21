@@ -104,8 +104,10 @@ const ContactForm = (props) => {
                 </div>
             </div>
             <div className="cp-det-btn mt-20 d-grid">
-                <button className="cp-btn" type='submit'>Submit<i className="fal fa-arrow-right"></i></button>
+                <button className=" thm-btn thm-btn--devops" type='submit'>Submit<i className="fal fa-arrow-right"></i></button>
             </div>
+
+            
         </form>
     )
 }
