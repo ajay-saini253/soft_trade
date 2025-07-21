@@ -86,12 +86,18 @@ const BlogSection = () => {
                         <div className="xb-item--line"><img src={bicon2} alt="" /></div>
                       </Link>
                     </div>
-
                     <h2 className="xb-item--title border-effect-2">
+                      <Link onClick={handleClick} to={`/blog-single/${blog.slug}`} style={{ color: "#000" }}>
+                        {(blog.title?.split(" ").length > 15
+                          ? blog.title.split(" ").slice(0, 15).join(" ") + "..."
+                          : blog.title) || 'Soft Trade BLogs'}
+                      </Link>
+                  </h2>
+                    {/* <h2 className="xb-item--title border-effect-2">
                       <Link onClick={handleClick} to={`/blog-single/${blog.slug}`} style={{ color: "#000" }}>
                         {blog.title || 'How to Prevent Ransomware Attacks, Tips for Businesses..'}
                       </Link>
-                    </h2>
+                    </h2> */}
 
                     {/* Optional metadata */}
                     {/* <ul className="xb-item--meta list-unstyled ul_li">

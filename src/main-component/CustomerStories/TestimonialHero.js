@@ -4,7 +4,7 @@ import icon1 from '../../images/icon/check-mark.png';
 import hImg1 from '../../images/about/customer-success-stories.png';
 import Bg from '../../images/bg/page_bg01.jpg';
 
-const TestimonialHero = () => {
+const   TestimonialHero = () => {
     return (
         <section
             className="hero hero-style-four pos-rel pt-10"

@@ -1,17 +1,19 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom'
+import { Fade } from "react-awesome-reveal";
 import Header from '../../components/home/header/Header';
 import Scrollbar from '../../components/home/scrollbar/scrollbar'
 import Footer from '../../components/home/footer/Footer';
 import Bg from '../../images/bg/page_bg01.jpg'
-import CtaSection from '../../components/home/CtaSection/CtaSection';
-import icon from '../../images/icon/magic.svg'
-import gImg1 from '../../images/gallery/cp-img01.jpg'
-import gImg2 from '../../images/gallery/cp-img02.jpg'
-import gImg3 from '../../images/gallery/cp-img03.jpg'
-import gImg4 from '../../images/gallery/cp-img04.jpg'
-import gImg5 from '../../images/gallery/cp-img05.jpg'
-import gImg6 from '../../images/gallery/cp-img06.jpg'
+// import CtaSection from '../../components/home/CtaSection/CtaSection';
+// import icon from '../../images/icon/magic.svg'
+// import gImg1 from '../../images/gallery/cp-img01.jpg'
+// import gImg2 from '../../images/gallery/cp-img02.jpg'
+// import gImg3 from '../../images/gallery/cp-img03.jpg'
+// import gImg4 from '../../images/gallery/cp-img04.jpg'
+// import gImg5 from '../../images/gallery/cp-img05.jpg'
+// import gImg6 from '../../images/gallery/cp-img06.jpg'
+import bImg1 from '../../images/hero/contact-img.png';
 
 const TermsPage = (props) => {
 
@@ -22,7 +24,8 @@ const TermsPage = (props) => {
         <Fragment>
             <div className='body_wrap sco_agency'>
                 <Header />
-                <section className="page-title cp-page-title pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+
+                {/* <section className="page-title cp-page-title pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
                         <div className="page-title-wrap">
                             <div className="row mt-none-30 align-items-center">
@@ -58,50 +61,88 @@ const TermsPage = (props) => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="terms&conditions-section cp-det-bg">
-                    <div className="container">
-                        <div className="terms-section_inner pt-120 pb-75">
-                            <div className="row">
-                                <div className="col-lg-11">
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Copyright and intellectual property usage</h2>
-                                        <p>All content on this website, including text, graphics, logos, and trademarks, is the intellectual property of Soft Trade and is protected by copyright, trademark, and other relevant laws. Unauthorized use, reproduction, or distribution of this material may violate these laws, leading to potential legal consequences. Soft Trade is not responsible for any third-party logos present on the site; their copyright remains with their respective owners. Users agree not to copy, republish, download, transmit, modify, rent, loan, sell, distribute, license, or create derivative works from any content or services offered through this site without explicit permission.</p>
-                                        <p>Images on this website may include licensed stock photos, to which Soft Trade does not claim copyright ownership. All other trademarks and trade names are the properties of their respective owners.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Website usage terms</h2>
-                                        <p>By accessing this website, you agree to comply with the following terms. You must not reproduce, modify, or distribute any content—including text, images, graphics, videos, and audio—for public or commercial use without authorization. Unauthorized use of website material may result in civil or criminal penalties. Soft Trade reserves all rights not expressly granted herein.</p>
-                                        <p>Additionally, users must not submit or transmit any unlawful, abusive, defamatory, or otherwise offensive material via this website. Contact information, including email addresses found here, must not be used for unsolicited or promotional communications.</p>
-                                        <p>This website may contain links to external sites. Soft Trade disclaims any responsibility for the content or privacy practices of third-party sites accessed through such links. Visiting these sites is solely at the user’s own risk.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Software and services</h2>
-                                        <p>Our services, provided on an "as-is" and "as-available" basis, are governed by legally binding agreements that outline specific terms of service. You must give express consent to these terms to initiate service, making the agreement binding on both parties.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Personal information policy</h2>
-                                        <p>Soft Trade adheres to ethical business practices and safeguards your personal information according to our Privacy Policy, which you should review for detailed information.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Disclaimer</h2>
-                                        <p>Information on this website is provided in good faith and sourced from reliable providers. However, it may contain inaccuracies or typographical errors. Soft Trade makes no express or implied warranties regarding the information, products, or services available on this site, and it should not be considered as professional advice.</p>
-                                        <p>Soft Trade disclaims all warranties, including those related to fitness for a particular purpose. Usage of any services or material through this site is at the user’s own discretion and risk. Soft Trade shall not be held liable for any direct, incidental, or consequential damages resulting from your use or inability to use this site or its content. Users agree to indemnify Soft Trade from any losses, damages, or expenses, including attorney fees, related to misuse of the site’s content or services.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Limitation of liability</h2>
-                                        <p>Soft Trade disclaims liability for any damages, including lost data or profits, regardless of foreseeability or prior notification. This limitation may not apply in jurisdictions that prohibit exclusion of liability.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Contact</h2>
-                                        <p><Link onClick={ClickHandler} to="/contact" className="details-link">Click here</Link> to contact us regarding this Terms & Conditions or other related issues. You can also send us an e-mail <br/> on: <a href="mailto:contact@Soft Trade.com">contact@Soft Trade.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <CtaSection cClass={'bg'}/>
+                </section> */}
+               <section className="page-title pt-50 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+  <div className="container">
+    <div className="page-title-wrap sd-title-wrap">
+      <div className="row mt-none-30 align-items-center">
+        <div className="col-lg-7 order-2 order-lg-1 py-lg-3 py-3">
+          <div className="page-title-box text-center">
+            <Fade direction="up" triggerOnce={false} duration={1000} delay={9}>
+              <h5 className="title pb-20 wow fadeInUp">Terms of Use & Legal Notice</h5>
+            </Fade>
+            <Fade direction="up" triggerOnce={false} duration={1400} delay={9}>
+              <span className="wow fadeInUp text-justify">
+                These Terms and Conditions govern the use of all services, content, and software provided by Soft Trade across mobile, desktop, and web platforms. Please read them carefully before using our site.
+              </span>
+            </Fade>
+          </div>
+        </div>
+        <div className="col-lg-5 py-lg-3 py-3 order-1 order-lg-2">
+          <div className="sd-right-img pos-rel">
+            <Fade direction="up" triggerOnce={false} duration={1200} delay={9}>
+              <img className="wow fadeInRight rounded-5" src={bImg1} alt="Soft Trade Terms & Conditions Hero" />
+            </Fade>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="terms&conditions-section cp-det-bg">
+  <div className="container">
+    <div className="terms-section_inner pt-120 pb-75">
+      <div className="row">
+        <div className="col-lg-11">
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">1. Copyright and Intellectual Property</h2>
+            <p>All content on this website—including text, graphics, logos, and trademarks—is the property of Soft Trade or its licensors, protected by intellectual property laws. Unauthorized use or duplication may lead to legal action. Third-party logos and content are owned by their respective entities.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">2. Website Usage Terms</h2>
+            <p>By using our site, you agree not to reproduce, distribute, or alter any content without written permission. You must not use our content for unlawful, abusive, or defamatory purposes. Unsolicited marketing through contact details listed on this site is strictly prohibited.</p>
+            <p>We may link to third-party websites for convenience. However, Soft Trade is not responsible for their content or privacy practices. Use them at your own risk.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">3. Software and Services</h2>
+            <p>Our ERP solutions are delivered on an "as-is" and "as-available" basis. Specific agreements, including pricing and licensing, are governed by separate contracts. Use of our services implies your agreement to the applicable terms and conditions.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">4. Personal Information</h2>
+            <p>Soft Trade values your privacy and processes personal information according to our <Link onClick={ClickHandler} to="/privacy-policy" className="details-link">Privacy Policy</Link>. We encourage you to review it for more details about how we collect, use, and protect your data.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">5. Disclaimer</h2>
+            <p>The information provided on this website is for general informational purposes only. While we strive for accuracy, Soft Trade makes no guarantees of completeness, accuracy, or usefulness. We disclaim all liability for errors or omissions in the content.</p>
+            <p>Use of this website is at your own risk. We are not liable for damages resulting from use, inability to use, or reliance on any content or services.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">6. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Soft Trade is not liable for any indirect, incidental, or consequential damages—whether in contract or tort—including loss of data, revenue, or profits. This limitation may not apply in jurisdictions that prohibit certain exclusions.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">7. Contact Information</h2>
+            <p>
+              <Link onClick={ClickHandler} to="/contact" className="details-link">Click here</Link> to contact us regarding these Terms or for legal concerns. <br />
+              You can also email us at: <a href="mailto:contact@softtrade.com">contact@softtrade.com</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                {/* <CtaSection cClass={'bg'}/> */}
             </div>
             <Footer />
             <Scrollbar />

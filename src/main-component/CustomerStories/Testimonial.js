@@ -5,10 +5,10 @@ import { Fade } from "react-awesome-reveal";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import tImg1 from '../../images/testimonial/sa-tas05.png';
-import tImg2 from '../../images/testimonial/sa-tas01.png';
-import tImg3 from '../../images/testimonial/sa-tas02.png';
-import tImg4 from '../../images/testimonial/sa-tas03.png';
+import tImg1 from '../../images/testimonial/img_1.jpg';
+import tImg2 from '../../images/testimonial/img_2.jpg';
+import tImg3 from '../../images/testimonial/img_3.jpg';
+import tImg4 from '../../images/testimonial/img_1.jpg';
 
 import icon1 from '../../images/testimonial/tes-logo02.png';
 import icon2 from '../../images/testimonial/tes-logo01.png';

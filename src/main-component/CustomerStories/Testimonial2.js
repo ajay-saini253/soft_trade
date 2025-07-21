@@ -6,8 +6,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import tImg1 from "../../images/testimonial/da-tes-img.png";  // Replace with real customer photos
-import tImg2 from "../../images/testimonial/ixico-logo.png";  // Replace with real logos
+import tImg1 from "../../images/testimonial/business-concept.jpg"; 
+import Img1 from "../../images/testimonial/ixico-logo.png";  
+import tImg2 from "../../images/testimonial/beautiful-young.jpg"; 
+import Img2 from "../../images/testimonial/ixico-logo.png";  
+import tImg3 from "../../images/testimonial/img6.jpg"; 
+import Img3 from "../../images/testimonial/ixico-logo.png";  
+import tImg4 from "../../images/testimonial/smiling-young.jpg"; 
+import Img4 from "../../images/testimonial/ixico-logo.png";  
 
 const Testimonial2 = () => {
     const prevRef = useRef(null);
@@ -28,6 +34,8 @@ const Testimonial2 = () => {
         {
             title: "Empowering Field Teams with MobileERP",
             content1: "Our sales force needed real-time access to inventory and orders while on the move. Soft Trade's MobileERP enabled seamless mobile workflows and boosted our team’s productivity by 60%.",
+            img:tImg1,
+            img2:Img1,
             highlights: [
                 { number: "60% Increase", text: "In mobile workforce productivity" },
                 { number: "24/7 Access", text: "Real-time inventory updates from any location" }
@@ -38,6 +46,8 @@ const Testimonial2 = () => {
         {
             title: "WebSuite ERP Streamlined Our Operations",
             content1: "We migrated from legacy software to Soft Trade's WebSuite ERP. The switch streamlined finance, HR, and logistics into one platform accessible via any browser.",
+             img:tImg2,
+            img2:Img2,
             highlights: [
                 { number: "3x Faster", text: "Order processing time reduced drastically" },
                 { number: "Unified Dashboard", text: "All departments collaborate in real-time" }
@@ -48,6 +58,8 @@ const Testimonial2 = () => {
         {
             title: "CloudCore ERP Scaled with Our Growth",
             content1: "As we scaled globally, we needed a solution that scaled too. CloudCore ERP from Soft Trade gave us security, performance, and flexibility—all in the cloud.",
+            img:tImg3,
+            img2:Img3,
             highlights: [
                 { number: "$1M Saved", text: "In server maintenance and downtime costs" },
                 { number: "99.9% Uptime", text: "Across global office operations" }
@@ -58,6 +70,8 @@ const Testimonial2 = () => {
         {
             title: "DeskMaster ERP Modernized Our Factory Floor",
             content1: "DeskMaster ERP integrated with our machines and legacy software, giving live reports and scheduling in real-time.",
+             img:tImg4,
+            img2:Img4,
             highlights: [
                 { number: "80% Reduction", text: "In production downtime" },
                 { number: "Full Integration", text: "With legacy desktop systems" }
@@ -110,10 +124,11 @@ const Testimonial2 = () => {
                                             <div className="col-lg-6 mt-30 order-1 order-lg-2">
                                                 <div className="da-tes-right">
                                                     <div className="xb-item--author">
-                                                        <img src={tImg1} alt="Client" />
+                                                        <img src={item.img} alt="Client" />
+
                                                     </div>
                                                     <div className="xb-item--avatar">
-                                                        <img src={tImg2} alt="Company logo" />
+                                                        <img src={item.img2} alt="Company logo" />
                                                     </div>
                                                 </div>
                                             </div>

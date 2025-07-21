@@ -402,8 +402,8 @@ const Header = () => {
                   <li className="menu-item-has-children">
                     <Link onClick={clickHandler} to="/casestudy"><span>Partners</span></Link>
                     <ul className="submenu">
-                      <li><Link onClick={clickHandler} to="/casestudy"><span>Partner Overview</span></Link></li>
-                      <li><Link onClick={clickHandler} to="/casestudy-details/Marketing"><span>Partner Login</span></Link></li>
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Overview</span></Link></li>
+                      <li><Link onClick={clickHandler} to="/"><span>Partner Login</span></Link></li>
                     </ul>
                   </li>
                   {/* contact */}

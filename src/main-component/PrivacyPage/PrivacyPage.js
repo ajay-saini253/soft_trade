@@ -1,18 +1,20 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom'
+import { Fade } from "react-awesome-reveal";
 import Header from '../../components/home/header/Header';
 import Scrollbar from '../../components/home/scrollbar/scrollbar'
 import Footer from '../../components/home/footer/Footer';
 import Bg from '../../images/bg/page_bg01.jpg'
-import CtaSection from '../../components/home/CtaSection/CtaSection';
-import icon from '../../images/icon/magic.svg'
-import gImg1 from '../../images/gallery/cp-img01.jpg'
-import gImg2 from '../../images/gallery/cp-img02.jpg'
-import gImg3 from '../../images/gallery/cp-img03.jpg'
-import gImg4 from '../../images/gallery/cp-img04.jpg'
-import gImg5 from '../../images/gallery/cp-img05.jpg'
-import gImg6 from '../../images/gallery/cp-img06.jpg'
-
+// import CtaSection from '../../components/home/CtaSection/CtaSection';
+// import icon from '../../images/icon/magic.svg'
+// import gImg1 from '../../images/gallery/cp-img01.jpg'
+// import gImg2 from '../../images/gallery/cp-img02.jpg'
+// import gImg3 from '../../images/gallery/cp-img03.jpg'
+// import gImg4 from '../../images/gallery/cp-img04.jpg'
+// import gImg5 from '../../images/gallery/cp-img05.jpg'
+// import gImg6 from '../../images/gallery/cp-img06.jpg'
+// import { Fade } from "react-awesome-reveal";
+import bImg1 from '../../images/hero/contact-img.png';
 const PrivacyPage = (props) => {
 
     const ClickHandler = () => {
@@ -22,7 +24,7 @@ const PrivacyPage = (props) => {
         <Fragment>
             <div className='body_wrap sco_agency'>
                 <Header />
-                <section className="page-title cp-page-title pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+                {/* <section className="page-title cp-page-title pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
                         <div className="page-title-wrap">
                             <div className="row mt-none-30 align-items-center">
@@ -58,69 +60,115 @@ const PrivacyPage = (props) => {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="terms&conditions-section cp-det-bg">
-                    <div className="container">
-                        <div className="terms-section_inner pt-120 pb-75">
-                            <div className="row">
-                                <div className="col-lg-11">
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Data controller and data collection</h2>
-                                        <p>Soft Trade is committed to safeguarding your privacy. The types of Personal Data collected may vary depending on the services offered and may be voluntarily provided by users or automatically collected when using this site. This data may include but is not limited to user-provided information, cookies, and other tracking tools. Cookies are used solely to improve the user experience and personalize service offerings.</p>
-                                        <p>Certain types of data may be necessary to access and utilize specific features or services on this website. For example, contact information, account details, or preferences may be required to personalize the experience or enable specific functionalities</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">User responsibilities</h2>
-                                        <p>Users are responsible for any third-party data shared via the Soft Trade website and affirm their rights to communicate such data, thereby relieving Soft Trade of any associated liability.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Data processing and security</h2>
-                                        <p>Data is processed using secure IT systems at Soft Trade’s operational offices and in other locations necessary to support our services. Soft Trade ensures strict security measures to prevent unauthorized access, modification, or destruction of personal data. In some cases, data may be accessed by select team members (e.g., sales, marketing, system administration) or external parties (e.g., service providers), as authorized by Soft Trade.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Data storage and retention</h2>
-                                        <p>Personal data is retained only for as long as necessary to fulfill the intended purpose or as required by law. Users may request data deletion or suspension at any time by contacting Soft Trade.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Legal action</h2>
-                                        <p>Soft Trade may disclose personal data to comply with legal obligations or respond to public authority requests. Personal data may also be used in legal proceedings arising from improper use of the website or services.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">User rights</h2>
-                                        <p>Users have the right to access, update, or delete their personal data and may contact Soft Trade at any time for assistance. Users can also request data anonymization or oppose processing activities under applicable laws. Such requests should be directed to the Data Controller using the contact details provided on this page.</p>
-                                        <ul className="privacy-details">
-                                            <li>Users can request information about the personal data Soft Trade holds.</li>
-                                            <li>Correct any inaccurate or incomplete data.</li>
-                                            <li>Request the deletion of their data when it's no longer needed.</li>
-                                            <li>Request their data in a transferable format.</li>
-                                            <li>Limit the processing of their data in certain situations.</li>
-                                            <li>Object to the processing of their data for direct marketing or legitimate interests.</li>
-                                            <li>Withdraw consent for data processing at any time.</li>
-                                            <li>File a complaint with a supervisory authority if they feel their rights are violated.</li>
-                                        </ul>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">"Do not track" requests</h2>
-                                        <p>Soft Trade does not currently support “Do Not Track” requests. For information on how third-party services handle such requests, please refer to their respective privacy policies.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Policy updates</h2>
-                                        <p>Soft Trade may update this Privacy Policy periodically. Users are encouraged to review this page regularly. Continued use of the website constitutes acceptance of these terms.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Retargeting and ad cookies</h2>
-                                        <p>Soft Trade uses cookies for advertising purposes through partners like AdRoll. While these partners do not collect sensitive personal information, cookies allow for tailored advertising based on user interests. Users can opt out of targeted advertising through the Network Advertising Initiative.</p>
-                                    </div>
-                                    <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">Contact</h2>
-                                        <p><Link onClick={ClickHandler} to="/contact" className="details-link">Click here</Link> to contact us regarding this Terms & Conditions or other related issues. You can also send us an e-mail <br/> on: <a href="mailto:contact@Soft Trade.com">contact@Soft Trade.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <CtaSection cClassNamclassName={'bg'} />
+                </section> */}
+               <section className="page-title pt-50 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+  <div className="container">
+    <div className="page-title-wrap sd-title-wrap">
+      <div className="row mt-none-30 align-items-center">
+        <div className="col-lg-7 order-2 order-lg-1 py-lg-3 py-3">
+          <div className="page-title-box text-center">
+            <Fade direction="up" triggerOnce={false} duration={1000} delay={9}>
+              <h5 className="title pb-20 wow fadeInUp">
+                Privacy, Security, and Trust.
+              </h5>
+            </Fade>
+            <Fade direction="up" triggerOnce={false} duration={1400} delay={9}>
+              <span className="wow fadeInUp text-justify">
+                At Soft Trade, your privacy is our top priority. This policy explains how we collect, use, and protect your data across all our platforms — including mobile, desktop, cloud, and web ERP solutions.
+              </span>
+            </Fade>
+          </div>
+        </div>
+        <div className="col-lg-5 py-lg-3 py-3 order-1 order-lg-2">
+          <div className="sd-right-img pos-rel">
+            <Fade direction="up" triggerOnce={false} duration={1200} delay={9}>
+              <img className="wow fadeInRight rounded-5" src={bImg1} alt="Soft Trade Privacy Policy Hero" />
+            </Fade>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="terms&conditions-section cp-det-bg">
+  <div className="container">
+    <div className="terms-section_inner pt-120 pb-75">
+      <div className="row">
+        <div className="col-lg-11">
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">1. Data Collection</h2>
+            <p>We collect personal and technical data to provide and enhance our ERP services. This includes names, emails, business details, device/browser data, and cookies. Information is collected through forms, interactions, and automated tools across mobile, desktop, and web platforms.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">2. Purpose of Data Use</h2>
+            <p>We use data for delivering services, managing user accounts, analytics, marketing (with consent), support, and product improvements across our ERP systems.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">3. Legal Basis</h2>
+            <p>We process data based on your consent, contractual necessity, legitimate business interest, and compliance with laws like GDPR and India’s IT Act.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">4. Data Sharing</h2>
+            <p>Your data is never sold. It may be shared with trusted partners for hosting, analytics, CRM, or support, under strict agreements ensuring protection.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">5. Data Security</h2>
+            <p>Soft Trade uses secure cloud storage, firewalls, access control, and encryption to prevent unauthorized access or loss of your data.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">6. Data Retention</h2>
+            <p>We retain your data only as long as required for its purpose or by law. You can request deletion or deactivation at any time.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">7. Your Rights</h2>
+            <ul className="privacy-details">
+              <li>Access the personal data we hold on you</li>
+              <li>Request correction of inaccurate data</li>
+              <li>Request deletion when data is no longer needed</li>
+              <li>Withdraw consent at any time</li>
+              <li>Restrict or object to certain data processing</li>
+              <li>Request data portability (transfer to another provider)</li>
+              <li>File a complaint with a regulatory authority</li>
+            </ul>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">8. Cookies & Tracking</h2>
+            <p>We use cookies for functionality and analytics. You may opt out through browser settings or manage cookie preferences via our site.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">9. Children’s Data</h2>
+            <p>Our services are not intended for individuals under 16. We do not knowingly collect their data. Please contact us if you believe we have done so.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">10. Policy Changes</h2>
+            <p>This privacy policy may be updated periodically. Continued use of our services implies acceptance of the current version.</p>
+          </div>
+
+          <div className="item-details-widget">
+            <h2 className="item_details_info_title">11. Contact</h2>
+            <p>
+              Have questions? <Link onClick={ClickHandler} to="/contact" className="details-link">Click here</Link> to contact us.<br />
+              Or email us at: <a href="mailto:contact@softtrade.com">contact@softtrade.com</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                {/* <CtaSection cClassNamclassName={'bg'} /> */}
             </div>
             <Footer />
             <Scrollbar />
