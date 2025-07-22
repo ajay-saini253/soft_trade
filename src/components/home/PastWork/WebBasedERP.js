@@ -20,7 +20,7 @@ const WebBaseERP = (props) => {
     backgroundRepeat: 'no-repeat',
   }} >
             <div className="container">
-                <div class="row justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center text-center">
                     <div className='col-lg-12 col-md-12 col-sm-12'>
                     <div className=" cta-sec-title text-center ">
                      <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
@@ -50,7 +50,7 @@ const WebBaseERP = (props) => {
                     </div>
                 </Fade>
                 </div>
-                <div className=" mt-5 pos-rel col-lg-3 col-md-6 col-sm-12 ">
+                <div className=" mt-3 pos-rel col-lg-3 col-md-6 col-sm-12 justify-content-center">
                 <div className="xb-btn ">
                     <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops ">Know More </Link>
                 </div>

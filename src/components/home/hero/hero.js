@@ -1,112 +1,73 @@
-import React, { useRef, useState } from "react";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Link } from 'react-router-dom'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Fade } from "react-awesome-reveal";
 
-import beforeImg from "../../../images/hero/business-than.png";
-import afterImg from "../../../images/hero/business-now.png";
-import icon3 from "../../../images/icon/Simplification1.png";
+import slide1 from "../../../images/hero/banner_1.png";
+import slide2 from "../../../images/hero/banner_2.png";
+import slide3 from "../../../images/hero/banner_3.png";
+
+
 
 const Hero = () => {
-  const sliderRef = useRef(null);
-  const [dividerX, setDividerX] = useState(50);
-  const [dragging, setDragging] = useState(false);
 
-  const getOffsetPercent = (clientX) => {
-    const rect = sliderRef.current.getBoundingClientRect();
-    const offset = ((clientX - rect.left) / rect.width) * 100;
-    return Math.max(0, Math.min(100, offset));
-  };
-
-  const startDrag = (e) => {
-    setDragging(true);
-    if (e.type === "touchstart") {
-      setDividerX(getOffsetPercent(e.touches[0].clientX));
-    } else {
-      setDividerX(getOffsetPercent(e.clientX));
+    const ClickHandler = () => {
+        window.scrollTo(10, 0);
     }
-  };
-
-  const stopDrag = () => setDragging(false);
-
-  const onDrag = (e) => {
-    if (!dragging) return;
-    if (e.type === "touchmove") {
-      setDividerX(getOffsetPercent(e.touches[0].clientX));
-    } else {
-      setDividerX(getOffsetPercent(e.clientX));
-    }
-  };
-
   return (
-    <section className="hero1-split py-5 bg-light text-center">
+    <>
+    <section className="hero1-split hero1 py-5 bg-light text-center">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12">
             <div className="da-sec-titlte text-center mb-4">
               <Fade direction="up" triggerOnce={true} duration={1000}>
-                <h2 className="hero1_Heading" style={{ }}>
-                  Transform Your Retail, Wholesale & Distribution Business with SoftTrade Infotech Pvt. Ltd.
+                <h2 className="hero1_Heading">
+                 All-in-one business solution for manufacturers, wholesalers, traders, and retailers.
                 </h2>
-                <p className="content hero1_para fs-5">
-                  Experience how we help businesses grow with smart, scalable ERP solutions built for modern enterprises.
-                </p>
-
-                <button className="text-white my-3 wow" type="button" id="hero1_button">
+              <h3 className="hero1_Heading1">Simple to start. Effortless to run</h3>
+                  {/* Easy to start and run */}
+               <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops "> 
+               {/* <img src={icon3} alt="Start Now Icon" className=" me-3" width={20} /> */}
+               {/* <svg className="me-3" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.4998 5.50067L18.3282 8.3291M13 21H21M3 21.0004L3.04745 20.6683C3.21536 19.4929 3.29932 18.9052 3.49029 18.3565C3.65975 17.8697 3.89124 17.4067 4.17906 16.979C4.50341 16.497 4.92319 16.0772 5.76274 15.2377L17.4107 3.58969C18.1918 2.80865 19.4581 2.80864 20.2392 3.58969C21.0202 4.37074 21.0202 5.63707 20.2392 6.41812L8.37744 18.2798C7.61579 19.0415 7.23497 19.4223 6.8012 19.7252C6.41618 19.994 6.00093 20.2167 5.56398 20.3887C5.07171 20.5824 4.54375 20.6889 3.48793 20.902L3 21.0004Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> */}
+               Start now - It's free </Link>
+                {/* <button className="text-white my-3 wow" type="button" id="hero1_button">
                   <span className="hero1_button_text">
                     <img src={icon3} alt="Start Now Icon" width={20} />
                   <span  className="ms-3">Start now - It's free</span>
                  </span>
-                </button>
-
-                <div className="mb-5">
-                  <span className="hero1_span_text">
-                    Free, forever, with unlimited users.{" "}
-                  </span>
-                    <span className="hero1_span_text2">See Why</span>
-
-                </div>
+                </button> */}
               </Fade>
             </div>
           </div>
         </div>
       </div>
-
-      <div
-        className="hero1-slider-container"
-        ref={sliderRef}
-        onMouseDown={startDrag}
-        onTouchStart={startDrag}
-        onMouseMove={onDrag}
-        onTouchMove={onDrag}
-        onMouseUp={stopDrag}
-        onMouseLeave={stopDrag}
-        onTouchEnd={stopDrag}
-      >
-        <img src={afterImg} alt="Business Now" className="hero1-slider-img" />
-
-        <div className="hero1-slider-before" style={{ width: `${dividerX}%` }}>
-          <img src={beforeImg} alt="Business Then" />
-        </div>
-
-        <div className="hero1-slider-divider" style={{ left: `${dividerX}%` }}>
-          <button className="hero1-arrow-btn left" aria-label="Previous">
-            <i className="fas fa-arrow-left"></i>
-          </button>
-
-          <div className="hero1-handle" />
-
-          <button className="hero1-arrow-btn right" aria-label="Next">
-            <i className="fas fa-arrow-right"></i>
-          </button>
-        </div>
-
-        {/* <div className="hero1-label-left">
-          Business <strong>Then</strong>
-        </div>
-        <div className="hero1-label-right">
-          <span style={{ color: "#0036b1" }}>Business</span> <strong>Now</strong>
-        </div> */}
+      <div className="">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          // autoplay={{ delay: 3000 }}
+          loop={true}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 1 },
+          }}
+        >
+          <SwiperSlide><img src={slide1} alt="Slide 1" className="hero1-slider-image" /></SwiperSlide>
+          <SwiperSlide><img src={slide2} alt="Slide 2" className="hero1-slider-image" /></SwiperSlide>
+          <SwiperSlide><img src={slide3} alt="Slide 3" className="hero1-slider-image" /></SwiperSlide>
+        </Swiper>
       </div>
     </section>
+    </>
   );
 };
 

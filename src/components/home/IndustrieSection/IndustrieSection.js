@@ -27,7 +27,7 @@ const industryData = {
         { icon: sIcon9, title: 'Salon & Spa' },
         { icon: sIcon10, title: 'Mobile Store' },
     ],
-    Food: [
+    Wholesalers: [
         { icon: sIcon3, title: 'Grocery' },
         { icon: sIcon9, title: 'Salon & Spa' },
     ],
@@ -66,7 +66,7 @@ const IndustrieSection = () => {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`px-4 py-2 rounded-pill fw-semibold border-0 ${activeTab === tab ? 'text-white' : 'text-dark'}`}
+                                className={`px-4 py-2 rounded-pill fw-semibold border-0 text-uppercase ${activeTab === tab ? 'text-white' : 'text-dark'}`}
                                 style={{
                                     background: activeTab === tab
                                         ? 'linear-gradient(90deg, #34b1ff 0%, #9d4dff 100%)'
@@ -89,7 +89,7 @@ const IndustrieSection = () => {
                                 
                                 <div className="indus-item bg-white p-3 rounded shadow-sm h-100">
                                     <div className="mb-2">
-                                        <img src={item.icon} alt={item.title} className="img-fluid" style={{ maxWidth: '80px' }} />
+                                        <img src={item.icon} alt={item.title} className="img-fluid" style={{ maxWidth: '60px' }} />
                                     </div>
                                     <h6 className="mt-2 mb-0">{item.title}</h6>
                                 </div>
