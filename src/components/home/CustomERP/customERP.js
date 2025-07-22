@@ -31,7 +31,7 @@ const CustomERP = () => {
 
                                 <Fade direction='up' triggerOnce={false} duration={1400} delay={9}>
                                     <div className='my-2'>
-                                        <p className='text-start text-secondary'>
+                                        <p className='text-justify text-secondary'>
                                             Soft Trade is a Cloud, Web, Desktop, and Mobile-based ERP solution accessible through a single web link. It is an ideal choice for small to large businesses—managing everything from billing and stock tracking to accounting and GST compliance—while also offering powerful tools for customer support.
                                             </p>
                                     </div>

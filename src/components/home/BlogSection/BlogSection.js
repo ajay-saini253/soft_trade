@@ -47,7 +47,7 @@ const BlogSection = () => {
               <h2 className="title wow fadeInDown text-start" data-wow-delay="150ms" data-wow-duration="600ms">
                 Recent Blogs
               </h2>
-              <p className="mt-4 wow fadeInDown text-start">
+              <p className="mt-4 wow fadeInDown text-justify ">
                 Our blog section is packed with informative, thought-provoking, and engaging content <br />
                 that is sure to appeal to a wide range of readers.
               </p>

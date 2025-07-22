@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link } from 'react-router-dom'
-import "swiper/css";
+// import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Fade } from "react-awesome-reveal";
@@ -10,6 +10,7 @@ import { Fade } from "react-awesome-reveal";
 import slide1 from "../../../images/hero/banner_1.png";
 import slide2 from "../../../images/hero/banner_2.png";
 import slide3 from "../../../images/hero/banner_3.png";
+// import slide4 from "../../../images/hero/slider_4.jpg";
 
 
 
@@ -25,7 +26,7 @@ const Hero = () => {
         <div className="row justify-content-center">
           <div className="col-lg-12">
             <div className="da-sec-titlte text-center mb-4">
-              <Fade direction="up" triggerOnce={true} duration={1000}>
+              <Fade direction="up" triggerOnce={false} duration={1000}>
                 <h2 className="hero1_Heading">
                  All-in-one business solution for manufacturers, wholesalers, traders, and retailers.
                 </h2>
@@ -64,6 +65,8 @@ const Hero = () => {
           <SwiperSlide><img src={slide1} alt="Slide 1" className="hero1-slider-image" /></SwiperSlide>
           <SwiperSlide><img src={slide2} alt="Slide 2" className="hero1-slider-image" /></SwiperSlide>
           <SwiperSlide><img src={slide3} alt="Slide 3" className="hero1-slider-image" /></SwiperSlide>
+          {/* <SwiperSlide><img src={slide4} alt="Slide 3" className="hero1-slider-image" /></SwiperSlide> */}
+
         </Swiper>
       </div>
     </section>

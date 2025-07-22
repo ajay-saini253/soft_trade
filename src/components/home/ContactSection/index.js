@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "../ContactFrom/ContactForm";
-import Bg from "../../../images/bg/cont_bg-shape.png";
+import Bg from "../../../images/bg/contact_section.jpg";
 // import Bg2 from "from "../../../images/cont-bg02.png";
 // import icon1 from '../../../images/icon/edit.svg'
 import icon2 from "../../../images/icon/Simplification.png";
