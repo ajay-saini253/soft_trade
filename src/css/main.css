@@ -20457,7 +20457,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .xb-nav-mobile {
   font-size: 26px;
-  color: var(--color-primary-two);
+  color:#2a2e45;
+  /* color: var(--color-primary-two); */
 }
 
 .xb-nav-mobile:hover {
