@@ -35,7 +35,7 @@ const Header = () => {
   }, [handleScroll]);
 
   const clickHandler = () => window.scrollTo(10, 0);
-  const submitHandler = (e) => e.preventDefault();
+  // const submitHandler = (e) => e.preventDefault();
 
   const aboutMenuContent = {
     about: {
