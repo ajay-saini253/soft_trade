@@ -530,14 +530,15 @@ const Header = () => {
                         <img src={logo2} alt="Soft Trade Logo" />
                       </Link>
                     </div>
-                    <div className="xb-header-mobile-search xb-hide-xl">
+                    {/* <div className="xb-header-mobile-search xb-hide-xl">
                       <form role="search" onSubmit={submitHandler}>
                         <input type="text" placeholder="Search..." name="s" className="search-field" />
                         <button className="search-submit" type="submit">
                           <i className="far fa-search"></i>
                         </button>
                       </form>
-                    </div>
+                    </div> */}
+                  
                     <nav className="xb-header-nav">
                       <MobileMenu />
                     </nav>

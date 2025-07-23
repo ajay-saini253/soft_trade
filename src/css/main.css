@@ -20368,14 +20368,56 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 .xb-logo-mobile {
   display:flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .xb-logo-mobile img {
-
-  height: 70px;
+  height: 100px;
 }
 
+/* mobile information menu */
+
+.mobile-menu-contact-information {
+  padding: 0 0 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2a2e45;
+}
+
+.mobile-menu-contact-information li {
+  padding: 5px 20px;
+  border-radius: 20px;
+  list-style: none;
+}
+.mobile-menu-contact-information li:hover {
+ background-color: #2a2e45;
+}
+
+.mobile-menu-contact-information li a {
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px; 
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-contact-information li svg {
+  transition: stroke 0.3s ease, fill 0.3s ease;
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-menu-contact-information li:hover a {
+  color: #fff;
+}
+
+.mobile-menu-contact-information li:hover svg {
+  stroke: #fff !important;
+  fill: #fff  !important;
+}
+
+
+/* mobile information menu end */
 .xb-header-mobile-search {
   margin-bottom: 20px;
 }
