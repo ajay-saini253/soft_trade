@@ -43,18 +43,6 @@ const slugify = (text) =>
 const IndustrieSection = () => {
     const [activeTab, setActiveTab] = useState('Retail');
 
-
-    const scrollRef = React.useRef();
-
-const scrollTabs = (direction) => {
-  if (scrollRef.current) {
-    const scrollAmount = 150;
-    scrollRef.current.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
-    });
-  }
-};
     return (
          <section className="industrie m-lr pt-60 pb-50">
             <div className="industrie-wrap sec-bg pos-rel pt-50 pb-100">
@@ -73,32 +61,25 @@ const scrollTabs = (direction) => {
                     </div>
 
                     {/* Tabs */}
-<div className="industrie-tabs-wrapper mb-4 position-relative">
-  <button className="scroll-arrow left" onClick={() => scrollTabs('left')}>&#x276E;</button>
-
-  <div className="industrie-tabs-scroll-wrapper" ref={scrollRef}>
-    <div className="industrie-tabs d-inline-flex gap-3">
-      {Object.keys(industryData).map((tab) => (
-        <button
-          key={tab}
-          onClick={() => setActiveTab(tab)}
-          className={`px-4 py-2 rounded-pill fw-semibold border-0 text-uppercase ${activeTab === tab ? 'text-white' : 'text-dark'}`}
-          style={{
-            background: activeTab === tab ? '#2a2e45' : '#fff',
-            boxShadow: activeTab === tab ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : 'none',
-            whiteSpace: 'nowrap',
-            transition: 'all 0.3s ease-in-out'
-          }}
-        >
-          {tab}
-        </button>
-      ))}
-    </div>
-  </div>
-
-  <button className="scroll-arrow right" onClick={() => scrollTabs('right')}>&#x276F;</button>
-</div>
-
+                    <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                        {Object.keys(industryData).map((tab) => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab)}
+                                className={`px-4 py-2 rounded-pill fw-semibold border-0 text-uppercase ${activeTab === tab ? 'text-white' : 'text-dark'}`}
+                                style={{
+                                    background: activeTab === tab
+                                        // ? 'linear-gradient(90deg, #34b1ff 0%, #9d4dff 100%)'
+                                        ?'#2a2e45'
+                                        : '#fff',
+                                    boxShadow: activeTab === tab ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : 'none',
+                                    transition: 'all 0.3s ease-in-out'
+                                }}
+                            >
+                                {tab}
+                            </button>
+                        ))}
+                    </div>
 
                     {/* Industry Items */}
                      <Fade direction='up' triggerOnce={false} duration={1200}>

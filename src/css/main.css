@@ -22892,3 +22892,72 @@ img.black-icon {
   display: block;
 }
 }
+
+
+/* Common Styles */
+.industrie-tabs-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.industrie-tabs-wrapper .scroll-arrow {
+  position: absolute;
+  z-index: 10;
+  background-color: #2a2e45;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 6px;
+  cursor: pointer;
+  display: none; /* hide by default */
+}
+
+.industrie-tabs-wrapper .scroll-arrow.left {
+  left: 0;
+}
+
+.industrie-tabs-wrapper .scroll-arrow.right {
+  right: 0;
+}
+
+/* Hide scrollbar visually */
+.industrie-tabs-wrapper .industrie-tabs-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  padding: 0 40px;
+  scroll-behavior: smooth;
+}
+
+.industrie-tabs-wrapper .industrie-tabs-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* On large screens, no scroll, center tabs */
+@media (min-width: 992px) {
+  .industrie-tabs-wrapper .industrie-tabs-scroll-wrapper {
+    overflow-x: visible;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* On small screens, show scroll and arrows */
+@media (max-width: 991px) {
+  .industrie-tabs-wrapper .scroll-arrow {
+    display: block;
+  }
+
+  .industrie-tabs-wrapper .industrie-tabs-scroll-wrapper {
+    display: block;
+  }
+
+  .industrie-tabs-wrapper .industrie-tabs {
+    min-width: max-content;
+  }
+}
