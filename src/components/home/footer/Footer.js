@@ -49,7 +49,7 @@ const Footer = (props) => {
                                 <span><img src={icon5} alt="" /></span>
                             </div>
                             <div className="xb-item--holder ms-3">
-                                <p className="xb-item--content">Our Office</p>
+                                <p className="xb-item--content">Office</p>
                                 <h4 className="xb-item--list lh-1">Jaipur , India</h4>
                             </div>
                         </div>
@@ -65,8 +65,8 @@ const Footer = (props) => {
                                 <li className="xb-item--list"><Link onClick={ClickHandler} to="/">About Us</Link></li>
                                 <li className="xb-item--list"><Link onClick={ClickHandler} to="/">Contact</Link></li>
                                 <li className="xb-item--list"><Link onClick={ClickHandler} to="/blog">Blog</Link></li>
-                                <li className="xb-item--list"><Link onClick={ClickHandler} to="/">Price</Link></li>
-                                <li className="xb-item--list"><Link onClick={ClickHandler} to="/contact">Real Feedback</Link></li>
+                                {/* <li className="xb-item--list"><Link onClick={ClickHandler} to="/">Price</Link></li>
+                                <li className="xb-item--list"><Link onClick={ClickHandler} to="/contact">Real Feedback</Link></li> */}
                             </ul>
                         </div>
                     </div>

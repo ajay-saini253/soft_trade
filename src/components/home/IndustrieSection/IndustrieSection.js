@@ -69,7 +69,8 @@ const IndustrieSection = () => {
                                 className={`px-4 py-2 rounded-pill fw-semibold border-0 text-uppercase ${activeTab === tab ? 'text-white' : 'text-dark'}`}
                                 style={{
                                     background: activeTab === tab
-                                        ? 'linear-gradient(90deg, #34b1ff 0%, #9d4dff 100%)'
+                                        // ? 'linear-gradient(90deg, #34b1ff 0%, #9d4dff 100%)'
+                                        ?'#2a2e45'
                                         : '#fff',
                                     boxShadow: activeTab === tab ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : 'none',
                                     transition: 'all 0.3s ease-in-out'
