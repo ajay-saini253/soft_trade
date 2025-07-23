@@ -46,18 +46,18 @@ const IndustrieSection = () => {
 
     const scrollRef = React.useRef();
 
-const scrollTabs = (direction) => {
-  if (scrollRef.current) {
-    const scrollAmount = 150;
-    scrollRef.current.scrollBy({
-      left: direction === 'left' ? -scrollAmount : scrollAmount,
-      behavior: 'smooth',
-    });
-  }
-};
+    const scrollTabs = (direction) => {
+        if (scrollRef.current) {
+            const scrollAmount = 150;
+            scrollRef.current.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth',
+            });
+        }
+    };
     return (
-         <section className="industrie m-lr pt-60 pb-50">
-            <div className="industrie-wrap sec-bg pos-rel pt-50 pb-100">
+        <section className="industrie m-lr pt-60 pb-50">
+            <div className="industrie-wrap sec-bg pos-rel pt-50 pb-50">
                 <div className="container">
                     <div className="sec-title--two text-center mb-30">
                         <Fade direction='down' triggerOnce={false} duration={1000}>
@@ -73,50 +73,50 @@ const scrollTabs = (direction) => {
                     </div>
 
                     {/* Tabs */}
-<div className="industrie-tabs-wrapper mb-4 position-relative">
-  <button className="scroll-arrow left" onClick={() => scrollTabs('left')}>&#x276E;</button>
+                    <div className="industrie-tabs-wrapper mb-4 position-relative">
+                        <button className="scroll-arrow left" onClick={() => scrollTabs('left')}>&#x276E;</button>
 
-  <div className="industrie-tabs-scroll-wrapper" ref={scrollRef}>
-    <div className="industrie-tabs d-inline-flex gap-3">
-      {Object.keys(industryData).map((tab) => (
-        <button
-          key={tab}
-          onClick={() => setActiveTab(tab)}
-          className={`px-4 py-2 rounded-pill fw-semibold border-0 text-uppercase ${activeTab === tab ? 'text-white' : 'text-dark'}`}
-          style={{
-            background: activeTab === tab ? '#2a2e45' : '#fff',
-            boxShadow: activeTab === tab ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : 'none',
-            whiteSpace: 'nowrap',
-            transition: 'all 0.3s ease-in-out'
-          }}
-        >
-          {tab}
-        </button>
-      ))}
-    </div>
-  </div>
+                        <div className="industrie-tabs-scroll-wrapper" ref={scrollRef}>
+                            <div className="industrie-tabs d-inline-flex gap-3">
+                                {Object.keys(industryData).map((tab) => (
+                                    <button
+                                        key={tab}
+                                        onClick={() => setActiveTab(tab)}
+                                        className={`px-4 py-2 rounded-pill fw-semibold border-0 text-uppercase ${activeTab === tab ? 'text-white' : 'text-dark'}`}
+                                        style={{
+                                            background: activeTab === tab ? '#2a2e45' : '#fff',
+                                            boxShadow: activeTab === tab ? '0px 4px 12px rgba(0, 0, 0, 0.1)' : 'none',
+                                            whiteSpace: 'nowrap',
+                                            transition: 'all 0.3s ease-in-out'
+                                        }}
+                                    >
+                                        {tab}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
 
-  <button className="scroll-arrow right" onClick={() => scrollTabs('right')}>&#x276F;</button>
-</div>
+                        <button className="scroll-arrow right" onClick={() => scrollTabs('right')}>&#x276F;</button>
+                    </div>
 
 
                     {/* Industry Items */}
-                     <Fade direction='up' triggerOnce={false} duration={1200}>
-                    <div className="row gy-4">
-                        {industryData[activeTab].map((item, index) => (
-                            <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                                <Link to={`/industry/${slugify(item.title)}`} className="industries-link">
-                                
-                                <div className="indus-item bg-white p-3 rounded shadow-sm h-100">
-                                    <div className="mb-2">
-                                        <img src={item.icon} alt={item.title} className="img-fluid" style={{ maxWidth: '60px' }} />
-                                    </div>
-                                    <h6 className="mt-2 mb-0">{item.title}</h6>
+                    <Fade direction='up' triggerOnce={false} duration={1200}>
+                        <div className="row gy-4">
+                            {industryData[activeTab].map((item, index) => (
+                                <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                    <Link to={`/industry/${slugify(item.title)}`} className="industries-link">
+
+                                        <div className="indus-item bg-white p-3 rounded shadow-sm h-100">
+                                            <div className="mb-2">
+                                                <img src={item.icon} alt={item.title} className="img-fluid" style={{ maxWidth: '60px' }} />
+                                            </div>
+                                            <h6 className="mt-2 mb-0">{item.title}</h6>
+                                        </div>
+                                    </Link>
                                 </div>
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
                     </Fade>
                 </div>
             </div>

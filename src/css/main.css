@@ -22854,9 +22854,6 @@ img.black-icon {
 }
 
 
-
-
-
 /* Mobile header */
 .css-h4y409-MuiList-root {
   padding-left: 10px !important;
@@ -22875,14 +22872,11 @@ img.black-icon {
 }
 
 
-
 .hero1 .swiper-pagination-bullet-active {
   background-color: #fff;
 }
 
-
-
- 
+/* hero1 slider image height */
 
 @media (max-width: 992px) {
 .hero1-slider-image {
@@ -22894,7 +22888,7 @@ img.black-icon {
 }
 
 
-/* Common Styles */
+/* industrie-tabs */
 .industrie-tabs-wrapper {
   display: flex;
   align-items: center;
@@ -22913,7 +22907,7 @@ img.black-icon {
   transform: translateY(-50%);
   border-radius: 6px;
   cursor: pointer;
-  display: none; /* hide by default */
+  display: none; 
 }
 
 .industrie-tabs-wrapper .scroll-arrow.left {
@@ -22924,7 +22918,7 @@ img.black-icon {
   right: 0;
 }
 
-/* Hide scrollbar visually */
+
 .industrie-tabs-wrapper .industrie-tabs-scroll-wrapper {
   overflow-x: auto;
   white-space: nowrap;
@@ -22938,8 +22932,8 @@ img.black-icon {
   display: none;
 }
 
-/* On large screens, no scroll, center tabs */
-@media (min-width: 992px) {
+
+@media (min-width: 767px) {
   .industrie-tabs-wrapper .industrie-tabs-scroll-wrapper {
     overflow-x: visible;
     justify-content: center;
@@ -22947,8 +22941,7 @@ img.black-icon {
   }
 }
 
-/* On small screens, show scroll and arrows */
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .industrie-tabs-wrapper .scroll-arrow {
     display: block;
   }
