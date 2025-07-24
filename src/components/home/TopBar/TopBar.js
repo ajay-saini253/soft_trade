@@ -17,7 +17,7 @@ const TopBar = () => {
         >
           Retailgraph has now been rebranded as Soft Trade. All features & videos are applicable on Soft Trade according to version - Basic, Standard Or Enterprise.
         </Link>
-        <Link onClick={ClickHandler} to="/contact" className="fs-6 ms-3 topbar_btn1">Know More </Link>
+        <Link onClick={ClickHandler} to="/contact" className="fs-6 mx-3 topbar_btn1">Know More </Link>
          {/* <Link onClick={ClickHandler} to="/contact" className=" topbar_btn ms-3 me-3">Know More </Link> */}
         
          </Marquee>
