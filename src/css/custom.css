@@ -185,7 +185,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 /* Tablet (768–991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero1_Heading {
-    font-size: 32px;
+    font-size: 35px;
     line-height: 140%;
   }
   .hero1_Heading1 {
@@ -197,7 +197,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 @media only screen and (min-width: 568px) and (max-width: 767px) {
    
   .hero1_Heading {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 150%;
   }
   .hero1_Heading1 {
@@ -212,7 +212,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
         padding-top:30px !important ;
     }
   .hero1_Heading {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 150%;
     padding: 0 10px;
   }
