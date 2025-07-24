@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link } from 'react-router-dom';
@@ -21,7 +21,10 @@ const WebBaseERP = () => {
     window.scrollTo(10, 0);
   };
 
-  return (
+ const swiperRef = useRef(null);
+  
+   return (
+    
     <section
       className="cta pos-rel z-1 pt-60 pb-60 o-hidden"
     //   style={{
@@ -57,9 +60,12 @@ const WebBaseERP = () => {
           </div>
             </Fade>
         
-          <div className="webbaseerp position-relative mt-20 desktop_device_weberp">
-          
-           
+
+  <div
+  className="webbaseerp position-relative mt-20 desktop_device_weberp"
+  onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+  onMouseLeave={() => swiperRef.current?.autoplay?.start()}
+>
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={20}
@@ -76,6 +82,7 @@ const WebBaseERP = () => {
                 768: { slidesPerView: 1 },
                 1024: { slidesPerView: 1 },
               }}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
             >
               <SwiperSlide>
                 <img src={cta1} alt="Slide 1" className="webbaseerp-slider-image" />

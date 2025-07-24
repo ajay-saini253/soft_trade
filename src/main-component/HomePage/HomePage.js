@@ -17,7 +17,7 @@ import InvestmentSection from '../../components/home/InvestmentSection/Investmen
 import BlogSection from '../../components/home/BlogSection/BlogSection';
 // import CaseStudySection from '../../components/home/CaseStudyPage/CaseSection';
 import ValuesSection from '../../components/home/ValuesSection/ValuesSection';
-import ProjectSection3 from '../../components/home/ProjectSection/ProjectSection3';
+// import ProjectSection3 from '../../components/home/ProjectSection/ProjectSection3';
 import WebBaseERP from '../../components/home/PastWork/WebBasedERP';
 import CustomERP from '../../components/home/CustomERP/customERP';
 import TopBar from '../../components/home/TopBar/TopBar';
@@ -43,7 +43,7 @@ const HomePage = () => {
                     {/* <CaseStudySection/> */}
                     {/* <ProjectSection /> */}
                     {/* <ProjectSection2 /> */}
-                    <ProjectSection3/>
+                    {/* <ProjectSection3/> */}
                     <ValuesSection/>
                     <IndustrieSection />
                     <PartnerSection />
