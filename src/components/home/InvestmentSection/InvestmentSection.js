@@ -16,7 +16,7 @@ const InvestmentSection = () => {
   return (
    <section
   className=" InvestmentSection hero hero-style-four pos-rel pt-10 pb-25"
-  style={{ background: "rgba(47, 94, 188, 0.05)" }}  
+  style={{ background: "#f9f9f9" }}  
 >
       <div className="container pt-5 pb-5">
         <div className="">

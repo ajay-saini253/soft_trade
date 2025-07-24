@@ -12,7 +12,7 @@ import IndustrieSection from '../../components/home/IndustrieSection/IndustrieSe
 import Footer from '../../components/home/footer/Footer';
 import Scrollbar from '../../components/home/scrollbar/scrollbar';
 
-import ContactSection from '../../components/home/ContactSection';
+// import ContactSection from '../../components/home/ContactSection';
 import InvestmentSection from '../../components/home/InvestmentSection/InvestmentSection';
 import BlogSection from '../../components/home/BlogSection/BlogSection';
 // import CaseStudySection from '../../components/home/CaseStudyPage/CaseSection';
@@ -53,7 +53,7 @@ const HomePage = () => {
                     
                     <BlogSection/>                
                     <InvestmentSection/>
-                    <ContactSection/>
+                    {/* <ContactSection/> */}
                     
                 </main>
                 <Footer />

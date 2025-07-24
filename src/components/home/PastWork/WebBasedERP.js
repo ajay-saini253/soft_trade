@@ -65,6 +65,7 @@ const WebBaseERP = () => {
               spaceBetween={20}
               slidesPerView={3}
               loop={true}
+               autoplay={{ delay: 2000 }}
               navigation={{
                 nextEl: ".custom-swiper-button-next",
                 prevEl: ".custom-swiper-button-prev",

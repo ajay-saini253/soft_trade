@@ -13,7 +13,7 @@ const TopBar = () => {
         <Link 
           onClick={ClickHandler} 
           to="/contact" 
-          className="text-black text-decoration-none fs-6"
+          className="text-white text-decoration-none fs-6"
         >
           Retailgraph has now been rebranded as Soft Trade. All features & videos are applicable on Soft Trade according to version - Basic, Standard Or Enterprise.
         </Link>

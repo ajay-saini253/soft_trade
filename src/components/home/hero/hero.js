@@ -21,7 +21,7 @@ const Hero = () => {
     }
   return (
     <>
-    <section className="hero1-split hero1 py-5 bg-light text-center">
+    <section className="hero1-split hero1 py-5 text-center">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12">
@@ -30,7 +30,7 @@ const Hero = () => {
                 <h2 className="hero1_Heading">
                  All-in-one business solution for manufacturers, wholesalers, traders, and retailers.
                 </h2>
-              <h3 className="hero1_Heading1">Simple to start. Effortless to run</h3>
+              <h3 className="hero1_Heading1">Easy to start. Simple to run</h3>
                   {/* Easy to start and run */}
                <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--devops "> 
                {/* <img src={icon3} alt="Start Now Icon" className=" me-3" width={20} /> */}
