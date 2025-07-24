@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Header from '../../components/home/header/Header';
 import Hero from '../../components/home/hero/hero';
 import PartnerSection from '../../components/home/PartnerSection';
-import About from '../../components/home/about/about';
+// import About from '../../components/home/about/about';
 // import ProjectSection from '../../components/home/ProjectSection/ProjectSection';
 // import ProjectSection2 from '../../components/home/ProjectSection/ProjectSection2';
 
@@ -36,8 +36,8 @@ const HomePage = () => {
                     {/* <BlurSlider/> */}
                    
                     <Hero />
-                    <PartnerSection />
-                    <About />
+                  
+                    {/* <About /> */}
                     <DesktopERP/>
                     <WebBaseERP/>
                     {/* <CaseStudySection/> */}
@@ -46,6 +46,7 @@ const HomePage = () => {
                     <ProjectSection3/>
                     <ValuesSection/>
                     <IndustrieSection />
+                    <PartnerSection />
                     {/* <WorkProcess />      */}
                     <CustomERP/>     
                     {/* <PastWork />      */}

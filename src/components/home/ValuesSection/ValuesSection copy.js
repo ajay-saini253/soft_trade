@@ -28,7 +28,25 @@ const featuresTop = [
     icon: icon10,
     title: "Advanced Security",
     content: "Strong encryption and access control for complete data safety."
-  },
+  }
+];
+
+const FeatureItem = ({ icon, title, content }) => (
+  <div className="col-lg-4 d-flex  align-items-center justify-content-evenly mb-sm-3 ">
+    <div className="hd-feature-item  d-flex align-items-center">
+      <div className='col-4'>
+        <img src={icon} alt={title} width={80} />
+      </div>
+      <div className='col-8 px-3 pb-2'>
+        <h3 className="xb-item--title my-2">{title}</h3>
+        <p className="xb-item--content text-justify">{content}</p>
+      </div>
+    </div>
+  </div>
+);
+
+
+const featuresBottom = [
   {
     icon: icon11,
     title: "Quality Driven",
@@ -43,8 +61,9 @@ const featuresTop = [
     icon: icon13,
     title: "Collaborative Teamwork",
     content: "We work closely as one team to drive shared success and innovation."
-  },
-
+  }
+];
+const featuresCenter = [
   {
     icon: icon7,
     title: "Fast Support",
@@ -63,13 +82,15 @@ const featuresTop = [
 ];
 
 
-const FeatureItem = ({ icon, title, content }) => (
-  <div className="col-lg-4 col-md-6 col-sm-12 d-flex  align-items-center justify-content-evenly pb-4 pb-lg-3 " id="valueSections">
-    <div className="hd-feature-item d-flex align-items-center">
-     <div className='col-3 text-center'>
-        <img src={icon} alt={title} width={60} />
+//const featuresBottom = [...featuresTop]; // Replace with different content if needed
+
+const FeatureItemBottom = ({ icon, title, content }) => (
+  <div className="col-lg-4 d-flex  align-items-center justify-content-evenly mb-sm-3 " id="valueSections">
+    <div className="hd-feature-item  d-flex align-items-center">
+     <div className='col-4'>
+        <img src={icon} alt={title} width={80} />
       </div>
-      <div className='col-9 px-3 pb-2'>
+      <div className='col-8 px-3 pb-2'>
         <h3 className="xb-item--title my-2">{title}</h3>
         <p className="xb-item--content text-justify">{content}</p>
       </div>
@@ -80,9 +101,9 @@ const FeatureItem = ({ icon, title, content }) => (
 const ValuesSection = () => {
   return (
   
-    <section className=" ValuesSection feature pt-70 pb-70 " style={{background:"#f9f9f9"}} >
+    <section className=" ValuesSection feature pt-70 pb-70 o-hidden" >
       <div className="container">
-        <div className="">
+        <div className="xb-feature-wrap pos-rel">
           <div className="sec-title--two sec-title--four text-center mb-65">
             <Fade direction="down" triggerOnce={false} duration={1700}>
               <h2 className="title">Why is the best Soft Trade?</h2>
@@ -90,14 +111,27 @@ const ValuesSection = () => {
           </div>
 
 
-          <div className="row d-flex  align-items-center justify-content-evenly  ">
+          <div className="row d-flex  align-items-center justify-content-evenly flex-wrap  hd-feature--top">
             {featuresTop.map((item, index) => (
-             <FeatureItem key={index} {...item} />
+              <FeatureItem key={index} {...item} />
             ))}
           </div>
-         
-         
-          
+          <div className="row d-flex  align-items-center justify-content-evenly flex-wrap  hd-feature--center mb-3">
+            {featuresCenter.map((item, index) => (
+              <FeatureItem key={index} {...item} />
+            ))}
+          </div>
+
+            
+          <div className="row hd-feature--bottom">
+            {featuresBottom.map((item, index) => (
+              <FeatureItemBottom key={index} {...item} />
+            ))}
+          </div>
+
+          <div className="xb-shape">
+            <span></span>
+          </div>
         </div>
       </div>
     </section>

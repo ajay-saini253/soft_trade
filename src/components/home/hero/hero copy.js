@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link } from 'react-router-dom'
-import "swiper/css";
+// import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Fade } from "react-awesome-reveal";
@@ -48,22 +48,26 @@ const Hero = () => {
         </div>
       
       <div className="hero1-slider-container">
-      <Swiper
-  modules={[Navigation, Pagination, Autoplay]}
-  spaceBetween={20}
-  slidesPerView={1}
-  navigation
-  pagination={{ clickable: true }}
-  loop={true}
-  autoplay={{ delay: 3000 }}
->
-  <SwiperSlide>
-    <img src={slide1} alt="Business Then" className="hero1-slider-image" />
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src={slide2} alt="Business Now" className="hero1-slider-image" />
-  </SwiperSlide>
-</Swiper>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          // autoplay={{ delay: 3000 }}
+          loop={true}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 1 },
+          }}
+        >
+          <SwiperSlide><img src={slide1} alt="Slide 1" className="hero1-slider-image" /></SwiperSlide>
+          <SwiperSlide><img src={slide2} alt="Slide 2" className="hero1-slider-image" /></SwiperSlide>
+          {/* <SwiperSlide><img src={slide3} alt="Slide 3" className="hero1-slider-image" /></SwiperSlide> */}
+          {/* <SwiperSlide><img src={slide4} alt="Slide 3" className="hero1-slider-image" /></SwiperSlide> */}
+
+        </Swiper>
       </div>
       </div>
     </section>

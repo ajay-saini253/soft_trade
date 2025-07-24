@@ -15,7 +15,7 @@ import sIcon9 from '../../../images/industrie/Salon.png';
 import sIcon10 from '../../../images/industrie/Mobile.png';
 
 const industryData = {
-    Retail: [
+   Manufacturers:[
         { icon: sIcon1, title: 'Pharmacy' },
         { icon: sIcon2, title: 'Footwear' },
         { icon: sIcon3, title: 'Grocery' },
@@ -31,7 +31,7 @@ const industryData = {
         { icon: sIcon3, title: 'Grocery' },
         { icon: sIcon9, title: 'Salon & Spa' },
     ],
-    Distribution: [
+    Retail:[
         { icon: sIcon5, title: 'Hardware/Sanitary' },
         { icon: sIcon6, title: 'Automobile' },
     ]
@@ -67,7 +67,7 @@ const IndustrieSection = () => {
                         </Fade>
                         <Fade direction='up' triggerOnce={false} duration={1200}>
                             <h3 className="fw-semibold fs-4">
-                                Built for <span style={{ color: "#0194dd" }}>Small & Medium Business</span>
+                                Built for <span className='yllow_txt'>Small & Medium Business</span>
                             </h3>
                         </Fade>
                     </div>

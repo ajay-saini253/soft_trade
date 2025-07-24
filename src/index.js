@@ -12,7 +12,7 @@ import './css/animate.css';
 import './css/cursor.css';
 import './css/custom-font.css';
 import './css/main.css';
-
+import './css/custom.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -555,9 +555,8 @@ const Header = () => {
             <div className="header-contact d-none d-md-block">
 
 
-               <Link onClick={ClickHandler} to="/contact" className="header_btn">
-               <span className="date-picker-wrapper pe-2 header_btn1">
-                  <FaCalendarAlt className="calendar-icon" />  Book Free Demo</span>
+               <Link onClick={ClickHandler} to="/contact" className="header_btn date-picker-wrapper header_btn1">         
+                  <FaCalendarAlt className="calendar-icon" />  Book Free Demo
                </Link>
               {/* <Link onClick={clickHandler} to="/contact" className="blc-btn blc-btn-custom">
                 <span className="date-picker-wrapper pe-2">

@@ -65,13 +65,16 @@
   --color-primary-five: #1438bc;
   --color-primary-five-rgb: 20, 56, 188;
   --color-heading: #111112;
+
   --color-heading-two: #0c111d;
+
   --color-heading-three: #16140c;
   --color-heading-four: #212877;
   --color-default: #49515b;
   --color-default-two: #494d57;
   /* --color-yellow: #ffd600; */
-  --color-yellow: #0d8c8c;
+  /* --color-yellow: #0d8c8c; */
+  --color-yellow: #000;
 
   --color-white: #fff;
   --color-black: #000;
@@ -4063,7 +4066,7 @@ color:black;
     transform: translateY(-50%);
     background: var(--color-yellow) !important;
     transition: height 0.3s ease;
-    color: var(--color-black) !important;
+    color: var(--color-white) !important;
     z-index: -1;
     border-radius: 20px;
 }
@@ -4072,8 +4075,8 @@ color:black;
     height: 100%;
 }
 
-span.header_btn1:hover {
-    color: black;
+.header_btn1:hover {
+    color:#fff;
 }
 
 
@@ -11641,8 +11644,8 @@ span.header_btn1:hover {
   .indus-item::before {
     left: 5px;
     top: 18px;
-    width: 158px;
-    height: 191px;
+    width: 150px;
+    height: 90px;
   }
 }
 
@@ -19773,7 +19776,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .thm-btn--devops:hover {
-  color: var(--color-heading-two);
+  /* color: var(--color-heading-two); */
+  color:var(--color-white);
 }
 
 .thm-btn--devops:hover::before {
@@ -22402,258 +22406,8 @@ a.footer-social.footer-twitter {
 
 
 
-/* hero1 section home */ 
-
-.hero1_Heading {
-  /* width: 1193px !important;
-  height: 120px !important; */
-
-  /* font-family: 'Gilroy-ExtraBold', sans-serif !important; */
-  font-family: 'Poppins', sans-serif !important;
-  
-  font-weight: 600 !important;
-  font-size: 46px !important;
-  line-height: 130% !important;
-  letter-spacing: 0px !important;
-  text-align: center !important;
-  color: #2A2E45 !important;
-  
-}
-
-
-.hero1_Heading1 {
-  font-family: Caveat;
-  font-weight: 400 !important;
-  font-style: normal !important;
-  font-size:80px;
-  line-height: 140% !important; 
-  letter-spacing: 0px !important;
-  text-align: center !important;
-  color: #585F81 !important; 
-}
-#hero1_button {
-  /* width: 268px !important; */
-  height: 60px !important;
-  padding: 20px 30px !important;
-  border-radius: 100px !important;
-  background-color: #2A2E45 !important;
-  color: #FFFFFF !important;
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 500 !important;
-  font-size: 16px !important;
-  line-height: 1 !important;
-  text-align: center !important;
-  border: none !important;
-  cursor: pointer !important;
-  text-decoration: none !important;
-}
-.hero1_button_text {
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 700 !important; /* Bold */
-  font-size: 18px !important;
-  line-height: 130% !important; /* ~23.4px */
-  letter-spacing: 0px !important;
-  color: #FFFFFF !important; /* White */
-  text-align: center !important;
-}
-.hero1_span_text {
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 400 !important;
-  font-style: italic !important;
-  font-size: 16px !important;
-  line-height: 150% !important;  /* ~24px */
-  letter-spacing: 0px !important;
-  text-align: center !important;
-  text-transform: none !important;
-  color: #757C9D !important;  /* Tertiary Text Color */
-}
-.hero1_span_text2 {
-  font-family: 'Poppins', sans-serif !important;
-    font-weight: 700 !important;
-    font-style: normal !important;
-    font-size: 16px !important;
-    line-height: 130% !important;
-    letter-spacing: 0px !important;
-    text-align: center !important;
-    color: #4449ED !important;
-    background: linear-gradient(135deg, #4449ED 0%, #1c2e7a 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-}
-
-.hero1-split {
-  background-color: #2f5ebc0d !important;
-  /* background: linear-gradient(180deg, #D9E8FF -22.87%, #FFFFFF 72.52%); */
-  position: relative;
-  overflow: hidden;
-}
-
-.hero1-slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  /* height: 500px; */
-  margin: 0 auto;
-  cursor: ew-resize;
-  overflow: hidden;
-  touch-action: none;
-}
-
-.hero1-slider-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  user-select: none;
-  pointer-events: none;
-  position: relative;
-  z-index: 1;
-  border-radius: 10px !important;
-}
-
-/* BEFORE image overlay */
-.hero1-slider-before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow: hidden;
-  z-index: 2;
-  
-}
-
-.hero1-slider-before img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  user-select: none;
-  pointer-events: none;
-  border-radius: 10px !important;
-}
-
-/* Divider/handle line */
-.hero1-slider-divider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: #000;
-  z-index: 2;
-  transform: translateX(-50%);
-}
-
-.hero1-slider-divider:hover {
-  width: 2px;
-  background-color: rgba(41, 22, 111, 0.8);
-}
-
-/* Round drag handle */
-.hero1-slider-divider .hero1-handle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 35px;
-  height: 35px;
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 50%;
-  z-index: 20;
-  cursor: pointer;
-  box-shadow: 0 0 0 6px rgba(41, 22, 111, 0.1);
-}
-
-.hero1-slider-divider .hero1-handle:hover {
-  border: 2px solid #0393df;
-  box-shadow: 0 0 0 6px rgba(41, 22, 111, 0.6);
-}
-
-/* Arrow buttons */
-.hero1-arrow-btn {
-  position: absolute;
-  top: 98%;
-  transform: translateY(-50%);
-  background: #fff;
-  border: 1px solid #ccc;
-  width: 50px;
-  height: 30px;
-  z-index: 30;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  padding: 0 30px;
-}
-
-.hero1-arrow-btn.left {
-  border-top-left-radius: 10px;
-  left: -62px;
-}
-
-.hero1-arrow-btn.right {
-  color: #fff;
-  background: #2a176d;
-  border-top-right-radius: 10px;
-}
-
-.hero1-arrow-btn i {
-  color: #2a176d;
-  font-size: 15px;
-}
-
-.hero1-arrow-btn.right i {
-  color: #fff;
-}
-
-/* Labels */
-.hero1-label-left,
-.hero1-label-right {
-  position: absolute;
-  top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 8px;
-  z-index: 25;
-}
-
-.hero1-label-left {
-  left: 20px;
-  background: #222;
-  color: #fff;
-}
-
-.hero1-label-right {
-  right: 20px;
-  background: #fff;
-  color: #0036b1;
-  border: 1px solid #ccc;
-}
-
-/* Responsive Styles */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero1_Heading {
-    font-size: 28px !important;
-    line-height: 150% !important;
-  }
-  .hero1_Heading1 {
-  font-size: 60px;
-  }
-}
-
 @media only screen and (min-width: 568px) and (max-width: 767px) {
 
-  .hero1_Heading {
-    font-size: 18px !important;
-    line-height: 160% !important;  
-}
-.hero1_Heading1 {
-  font-size: 45px;
-line-height: 160% !important;
-}
 
 .hd-feature--middle{
   justify-content: center !important;
@@ -22661,15 +22415,7 @@ line-height: 160% !important;
  
 }
 @media (max-width: 568px) {
- .hero1_Heading {
-    font-size: 18px !important;
-    line-height: 160% !important;  
-}
-.hero1_Heading1 {
-  padding: 15px 0;
-  font-size: 30px;
-line-height: 160% !important;
-}
+
 
 .hd-feature-item{
   margin-bottom: 30px !important;
@@ -22686,19 +22432,13 @@ line-height: 160% !important;
 
 @media (max-width: 767px) {
 
-.hero1-split {
-  padding-top: 20px !important;
-}
-
-
-
   .customERP_logo{
     display: flex;
     justify-content: center;
   }
 }
 
-/* hero1 end */
+
 
 
 
@@ -22751,12 +22491,11 @@ img.black-icon {
   height: 500px;
 } */
 .yllow_txt {
-    color: #ffb100;
+    /* color: #ffb100; */
+    color:#038f8e;
     font-weight: 600;
 }
-.webbaseerp_heading{
-  font-weight: 500;
-}
+
 .desktopbaseerp_heading{
   font-weight: 500;
 }
@@ -22873,7 +22612,7 @@ img.black-icon {
 
 
 .hero1 .swiper-pagination-bullet-active {
-  background-color: #fff;
+  background-color: #099ca1;
 }
 
 /* hero1 slider image height */
@@ -22954,3 +22693,5 @@ img.black-icon {
     min-width: max-content;
   }
 }
+
+
