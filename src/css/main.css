@@ -22402,7 +22402,8 @@ img.black-icon {
 } */
 .yllow_txt {
     /* color: #ffb100; */
-    color:#038f8e;
+    /* color:#038f8e; */
+    color:#fdb714;
     font-weight: 600;
 }
 
@@ -22522,7 +22523,7 @@ img.black-icon {
 
 
 .hero1 .swiper-pagination-bullet-active {
-  background-color: #099ca1;
+  background-color: #fdb714;
 }
 
 /* hero1 slider image height */

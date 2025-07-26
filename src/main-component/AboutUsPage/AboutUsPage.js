@@ -61,19 +61,19 @@ const AboutUsPage = (props) => {
                                         <Fade direction="up" triggerOnce={false} duration={1400} delay={500}>
                                             <ul className="list-unstyled mt-4">
                                                 <li className="d-flex align-items-start mb-2">
-                                                    <img src={icon1} alt="check" className="me-2 mt-1" />
+                                                    <img src={icon1} alt="check" className="me-2" />
                                                     <span><strong>Unified ERP Platform</strong> – Manage everything from inventory to invoicing in one place.</span>
                                                 </li>
                                                 <li className="d-flex align-items-start mb-2">
-                                                    <img src={icon1} alt="check" className="me-2 mt-1" />
+                                                    <img src={icon1} alt="check" className="me-2" />
                                                     <span><strong>Cloud & Mobile Ready</strong> – Access your business from anywhere, on any device.</span>
                                                 </li>
                                                 <li className="d-flex align-items-start mb-2">
-                                                    <img src={icon1} alt="check" className="me-2 mt-1" />
+                                                    <img src={icon1} alt="check" className="me-2" />
                                                     <span><strong>Scalable for Any Business Size</strong> – From startups to enterprises, we've got you covered.</span>
                                                 </li>
                                                 <li className="d-flex align-items-start">
-                                                    <img src={icon1} alt="check" className="me-2 mt-1" />
+                                                    <img src={icon1} alt="check" className="me-2" />
                                                     <span><strong>Data-Driven Decisions</strong> – Gain real-time insights with smart reporting & dashboards.</span>
                                                 </li>
                                             </ul>

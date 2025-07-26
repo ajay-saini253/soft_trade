@@ -28,17 +28,18 @@ const DesktopERP = (props) => {
               </Fade>
               <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
                 <div className='my-3' >
-                  <h2 className="title wow fadeInUp desktopbaseerp_heading " data-wow-duration="600ms">Desktop ERP <span class="yllow_txt">System</span></h2>
+                  <h2 className="title wow fadeInUp desktopbaseerp_heading " data-wow-duration="600ms">Desktop Software  <span class="yllow_txt">solution</span></h2>
                 </div>
               </Fade>
             </div>
           </div>
           <div className='col-lg-6 col-md-12 col-sm-12 my-2 '>
             <p className='text-center text-justify text-secondary'>
-            Soft Trade offers a powerful Desktop ERP System designed for businesses that prefer local installation and offline accessibility. 
-            Ideal for small to large-scale enterprises, it streamlines core operations such as billing, inventory management, and accounting — all while ensuring full GST compliance.
-             With a robust interface and seamless data handling, the Desktop ERP system provides reliability, data security, and performance without relying on constant internet connectivity.
-              </p>
+           Soft Trade offers a powerful Desktop software designed for businesses that prefer local installation and offline accessibility.
+            </p>
+          <p className='text-center text-justify text-secondary pt-3'>
+          All in one accounting software to manage invoices, expenses, generate reports, and stay tax-ready anytime anywhere
+           </p>
           </div>
 
 

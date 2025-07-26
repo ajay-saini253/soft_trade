@@ -35,19 +35,19 @@ const   TestimonialHero = () => {
                                 <Fade direction='up' triggerOnce={false} duration={1600}>
                                     <ul className="py-3 list-unstyled">
                                         <li className='py-1 d-flex align-items-start'>
-                                            <img src={icon1} alt="check" className="me-2 mt-1" />
+                                            <img src={icon1} alt="check" className="me-2" />
                                             <strong>Reduced order processing time</strong> by 40% with real-time mobile updates.
                                         </li>
                                         <li className='py-1 d-flex align-items-start'>
-                                            <img src={icon1} alt="check" className="me-2 mt-1" />
+                                            <img src={icon1} alt="check" className="me-2" />
                                             <strong>Improved inventory accuracy</strong> with cloud-based tracking & mobile barcode scanning.
                                         </li>
                                         <li className='py-1 d-flex align-items-start'>
-                                            <img src={icon1} alt="check" className="me-2 mt-1" />
+                                            <img src={icon1} alt="check" className="me-2" />
                                             <strong>24/7 access</strong> to critical business reports from any device or location.
                                         </li>
                                         <li className='py-1 d-flex align-items-start'>
-                                            <img src={icon1} alt="check" className="me-2 mt-1" />
+                                            <img src={icon1} alt="check" className="me-2" />
                                             <strong>Zero downtime</strong> and <strong>secure cloud backups</strong> ensured business continuity.
                                         </li>
                                     </ul>

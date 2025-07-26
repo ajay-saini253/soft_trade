@@ -4,7 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal";
 
-import cta1 from '../../../images/pastWork/soft-trade-iamge.png';
+import cta1 from '../../../images/pastWork/webbaseerp.png';
 import cta2 from '../../../images/pastWork/key-benefits.webp';
 import cta3 from '../../../images/pastWork/key-benefits-mobile.webp';
 
@@ -46,17 +46,17 @@ const WebBaseERP = () => {
               <Fade direction="up" triggerOnce={false} duration={1200} delay={9}>
                 <div className="my-3">
                   <h2 className="title webbaseerp_heading">
-                    Web-Based ERP <span className="yllow_txt">System</span>
+                      SoftTrade ERP – <span className="yllow_txt">Web Based ERP system </span>for Every Business Size
                   </h2>
                 </div>
               </Fade>
             </div>
           </div>
            <Fade direction="up" triggerOnce={false} duration={1200} delay={9}>
-          <div className="col-lg-10 my-2">
+          <div className="col-lg-12 my-2">
             <p className="text-center text-secondary">
-              Soft Trade is a Cloud Based ERP that runs by a single web link. It is an ideal choice for small, mid-size, and large-scale businesses. It takes care of your business billing, from stock tracking to accounting, keeping your business GST compliant and more.
-            </p>
+            SoftTrade ERP is a powerful, cloud-based ERP solution accessible through a single web link—no installations, no hassle. Designed to support small, mid-size, and large-scale businesses.From billing and inventory management to accounting and GST compliance, SwilERP takes care of it all—so you can focus on growing your business.
+             </p>
           </div>
             </Fade>
         
@@ -94,33 +94,33 @@ const WebBaseERP = () => {
                     <div className="erp-benefits-cards text-start mb-4">
                       <h5 className=" text-capitalize py-2 yllow_txt">Improved efficiency</h5>
                       <ul>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Streamline processes</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Eliminate Redundancy</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Speedify Operations</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Streamline processes</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Eliminate Redundancy</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Speedify Operations</li>
                       </ul>
                     </div>
                     <div className="erp-benefits-cards text-start mb-4">
                       <h5 className=" text-capitalize py-2 yllow_txt">Real-time Visibility</h5>
                       <ul>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Better process tracking</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Real-time data</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> More Control</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Better process tracking</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Real-time data</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> More Control</li>
                       </ul>
                     </div>
                     <div className="erp-benefits-cards text-start mb-4">
                       <h5 className=" text-capitalize py-2 yllow_txt">Reduced Costs</h5>
                       <ul>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Reduced labor costs</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Quicker turnaround times</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Lower manufacturing costs</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Reduced labor costs</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Quicker turnaround times</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Lower manufacturing costs</li>
                       </ul>
                     </div>
                     <div className="erp-benefits-cards text-start">
                       <h5 className=" text-capitalize py-2 yllow_txt">Enhanced Quality Control</h5>
                       <ul>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Product Quality metrics</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Timely issue identifying</li>
-                       <li className="text-black"><img src={icon1} alt="check" className="me-2 mt-1" /> Proactive corrective measures</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Product Quality metrics</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Timely issue identifying</li>
+                       <li className="text-black"><img src={icon1} alt="check" className="me-2" /> Proactive corrective measures</li>
                       </ul>
                     </div>
                   </div>
@@ -133,33 +133,33 @@ const WebBaseERP = () => {
                     <div className="erp-benefits-cards text-start mb-4">
                       <h5 className=" text-capitalize py-2 yllow_txt">Better Compliance</h5>
                       <ul>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Automated compliance</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Regulatory adherence</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Better compliance monitoring</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Automated compliance</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Regulatory adherence</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Better compliance monitoring</li>
                       </ul>
                     </div>
                     <div className="erp-benefits-cards text-start mb-4">
                       <h5 className=" text-capitalize py-2 yllow_txt">Lean Manufacturing</h5>
                       <ul>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Waste reduction</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Lower manufacturing costs</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Improved bottom line</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Waste reduction</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Lower manufacturing costs</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Improved bottom line</li>
                       </ul>
                     </div>
                     <div className="erp-benefits-cards text-start mb-4">
                       <h5 className=" text-capitalize py-2 yllow_txt">Revenue Growth</h5>
                       <ul>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Improved planning</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Increased sales</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Higher profit margins</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Improved planning</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Increased sales</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Higher profit margins</li>
                       </ul>
                     </div>
                     <div className="erp-benefits-cards text-start">
                       <h5 className=" text-capitalize py-2 yllow_txt">Improved Supply Chain</h5>
                       <ul>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Superior supply-chains</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Efficient demand forecasting</li>
-                       <li className="text-black"> <img src={icon1} alt="check" className="me-2 mt-1" /> Effective supplier management</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Superior supply-chains</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Efficient demand forecasting</li>
+                       <li className="text-black"> <img src={icon1} alt="check" className="me-2" /> Effective supplier management</li>
                       </ul>
                     </div>
                   </div>
@@ -198,13 +198,13 @@ const WebBaseERP = () => {
       <h5 className="text-capitalize py-2 yllow_txt">Improved Efficiency</h5>
       <ul>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Streamline processes
+          <img src={icon1} alt="check" className="me-2" /> Streamline processes
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Eliminate Redundancy
+          <img src={icon1} alt="check" className="me-2" /> Eliminate Redundancy
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Speedify Operations
+          <img src={icon1} alt="check" className="me-2" /> Speedify Operations
         </li>
       </ul>
     </div>
@@ -215,13 +215,13 @@ const WebBaseERP = () => {
       <h5 className="text-capitalize py-2 yllow_txt">Real-time Visibility</h5>
       <ul>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Better process tracking
+          <img src={icon1} alt="check" className="me-2" /> Better process tracking
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Real-time data
+          <img src={icon1} alt="check" className="me-2" /> Real-time data
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> More Control
+          <img src={icon1} alt="check" className="me-2" /> More Control
         </li>
       </ul>
     </div>
@@ -232,13 +232,13 @@ const WebBaseERP = () => {
       <h5 className="text-capitalize py-2 yllow_txt">Reduced Costs</h5>
       <ul>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Reduced labor costs
+          <img src={icon1} alt="check" className="me-2" /> Reduced labor costs
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Quicker turnaround times
+          <img src={icon1} alt="check" className="me-2" /> Quicker turnaround times
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Lower manufacturing costs
+          <img src={icon1} alt="check" className="me-2" /> Lower manufacturing costs
         </li>
       </ul>
     </div>
@@ -249,13 +249,13 @@ const WebBaseERP = () => {
       <h5 className="text-capitalize py-2 yllow_txt">Enhanced Quality Control</h5>
       <ul>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Product Quality metrics
+          <img src={icon1} alt="check" className="me-2" /> Product Quality metrics
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Timely issue identifying
+          <img src={icon1} alt="check" className="me-2" /> Timely issue identifying
         </li>
         <li className="text-black">
-          <img src={icon1} alt="check" className="me-2 mt-1" /> Proactive corrective measures
+          <img src={icon1} alt="check" className="me-2" /> Proactive corrective measures
         </li>
       </ul>
     </div>
@@ -301,13 +301,13 @@ const WebBaseERP = () => {
     <h5 className="text-capitalize py-2 yllow_txt">Better Compliance</h5>
     <ul>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Automated compliance
+        <img src={icon1} alt="check" className="me-2" /> Automated compliance
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Regulatory adherence
+        <img src={icon1} alt="check" className="me-2" /> Regulatory adherence
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Better compliance monitoring
+        <img src={icon1} alt="check" className="me-2" /> Better compliance monitoring
       </li>
     </ul>
   </div>
@@ -318,13 +318,13 @@ const WebBaseERP = () => {
     <h5 className="text-capitalize py-2 yllow_txt">Lean Manufacturing</h5>
     <ul>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Waste reduction
+        <img src={icon1} alt="check" className="me-2" /> Waste reduction
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Lower manufacturing costs
+        <img src={icon1} alt="check" className="me-2" /> Lower manufacturing costs
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Improved bottom line
+        <img src={icon1} alt="check" className="me-2" /> Improved bottom line
       </li>
     </ul>
   </div>
@@ -335,13 +335,13 @@ const WebBaseERP = () => {
     <h5 className="text-capitalize py-2 yllow_txt">Revenue Growth</h5>
     <ul>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Improved planning
+        <img src={icon1} alt="check" className="me-2" /> Improved planning
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Increased sales
+        <img src={icon1} alt="check" className="me-2" /> Increased sales
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Higher profit margins
+        <img src={icon1} alt="check" className="me-2" /> Higher profit margins
       </li>
     </ul>
   </div>
@@ -352,13 +352,13 @@ const WebBaseERP = () => {
     <h5 className="text-capitalize py-2 yllow_txt">Improved Supply Chain</h5>
     <ul>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Superior supply-chains
+        <img src={icon1} alt="check" className="me-2" /> Superior supply-chains
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Efficient demand forecasting
+        <img src={icon1} alt="check" className="me-2" /> Efficient demand forecasting
       </li>
       <li className="text-black">
-        <img src={icon1} alt="check" className="me-2 mt-1" /> Effective supplier management
+        <img src={icon1} alt="check" className="me-2" /> Effective supplier management
       </li>
     </ul>
   </div>

@@ -12,8 +12,9 @@ import TermsPage from '../TermsPage/TermsPage';
 import PrivacyPage from '../PrivacyPage/PrivacyPage';
  import BlogPage from '../BlogPage/BlogPage';
 import CustomerStories from '../CustomerStories/CustomerStories';
-
 import BlogDetails from '../BlogDetails/BlogDetails';
+import Download from '../Download/Download';
+import DesktopSoftware from '../DesktopSoftware/DesktopSoftware';
 
 
 
@@ -35,6 +36,7 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="about" element={<AboutUsPage />} />
+          <Route path="desktop-software" element={<DesktopSoftware/>}/>
            <Route path="customer-stories" element={<CustomerStories/>}/>
           <Route path="awards" element={<AwardPage/>}/>
           <Route path="contact" element={<ContactPage />} />
@@ -44,11 +46,10 @@ const AllRoute = () => {
           <Route path="terms-conditions" element={<TermsPage />} />
           <Route path="privacy-policy" element={<PrivacyPage />} />
           <Route path="blog" element={<BlogPage />} />
-       
+          <Route path='download' element={<Download/>}/>
 
-         
-          
-          <Route path="blog-single/:slug" element={<BlogDetails />} />
+        
+          <Route path="blog-single/:slug" element={<BlogDetails/>} />
 
 
 

@@ -238,7 +238,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 }
 
 .webbaseerp .swiper-pagination-bullet-active {
-  background-color: #099ca1 !important;
+  background-color: #fdb714 !important;
 }
 
 .erp-benefits-cards ul {
@@ -410,4 +410,169 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
     left:90%;
     right: auto;
   }
+}
+
+
+/* hero Download section */
+
+.hero-download-section-button-prev,
+.hero-download-section-button-next {
+  position: absolute;
+  bottom: -45px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: #2a2e45;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+/* Align prev/next to left and right at the bottom */
+.hero-download-section-button-prev {
+  left: 40%;
+  transform: translateX(-100%);
+}
+
+.hero-download-section-button-next {
+  right: 40%;
+  transform: translateX(100%);
+}
+
+/* Hover */
+.hero-download-section-button-prev:hover,
+.hero-download-section-button-next:hover {
+  background-color: #1c1f33;
+}
+@media (max-width: 767px) {
+  .hero-download-section-button-prev,
+  .hero-download-section-button-next {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    bottom: 15px;
+  }
+
+  .hero-download-section-button-prev {
+    left: 35%;
+  }
+
+  .hero-download-section-button-next {
+    right: 35%;
+  }
+}
+
+/* custom trusted customer */
+
+.trustrd-customer-container{
+     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+}
+
+.trusted-customer-heading {
+  font-size: 30px;
+  font-weight: 400;
+ margin-bottom: 15px;
+ 
+}
+
+.trusted-customer-box {
+  border: 1px dotted #7c7d7ea8;
+  border-radius: 8px;
+  padding: 20px 10px;
+}
+
+.trusted-customer-item {
+  /* margin-bottom: 20px; */
+  border-right: 1px dotted #7c7d7ea8;
+}
+
+.trusted-customer-item:last-child {
+  border-right: none;
+}
+
+.trusted-customer-number {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #038f8e;
+  margin-bottom: 5px;
+}
+
+.trusted-customer-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 767.98px) {
+    .trusted-customer-box {
+        padding: 0;
+    }
+  .trusted-customer-item {
+    border-right: none;
+    /* border-bottom: 1px solid #038f8e;
+    border-right: 1px solid #038f8e; */
+    padding: 15px 10px ;
+    margin-bottom: 0;
+  }
+
+  .trusted-customer-item1{
+     border-bottom: 1px dotted #7c7d7ea8;
+     border-right: 1px dotted #7c7d7ea8;
+  }
+
+.trusted-customer-item2{
+ border-bottom: 1px dotted #7c7d7ea8;
+  }
+  .trusted-customer-item3{
+ border-right: 1px dotted #7c7d7ea8;
+  }
+
+
+}
+
+
+/* desktop products */
+.products-section{
+  padding: 20px 0;
+}
+.desktopproduct-button{
+  background:#2A2E45 ;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color:white;
+}
+.product-details{
+  border-bottom: 1px solid;
+}
+.download-android-application{
+  width: 350px;
+}
+.download-manual-application{
+  width: 350px;
+}
+.desktopproduct-button:hover{
+ color:white;
+}
+.desktopproducts-list1{
+  margin: 15px 0;
+}
+.desktopproducts-link{
+  display:block;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color:#e6eaed;
+  color:#000;
+}
+
+.desktopproducts-link:hover{
+  background-color: #cbe7f8;
+  color:black;
 }

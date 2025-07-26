@@ -22,6 +22,7 @@ import WebBaseERP from '../../components/home/PastWork/WebBasedERP';
 import CustomERP from '../../components/home/CustomERP/customERP';
 import TopBar from '../../components/home/TopBar/TopBar';
 import DesktopERP from '../../components/home/PastWork/DesktopERP';
+import Trusted from '../../components/home/Trust_section/Trusted';
 // import BlurSlider from '../../components/home/PastWork/homes';
 
 
@@ -36,7 +37,7 @@ const HomePage = () => {
                     {/* <BlurSlider/> */}
                    
                     <Hero />
-                  
+                  <Trusted/>
                     {/* <About /> */}
                     <DesktopERP/>
                     <WebBaseERP/>

@@ -39,23 +39,23 @@ const CustomERP = () => {
                             <Fade direction='up' triggerOnce={false} duration={1800} delay={9}>
                                 <ul className="list-unstyled mt-3">
                                     <li className="d-flex align-items-start mb-2">
-                                        <img src={icon1} alt="check" className="me-2 mt-1" />
+                                        <img src={icon1} alt="check" className="me-2" />
                                         24x7 Ticket-Based Support System
                                     </li>
                                     <li className="d-flex align-items-start mb-2">
-                                        <img src={icon1} alt="check" className="me-2 mt-1" />
+                                        <img src={icon1} alt="check" className="me-2" />
                                         Real-Time Chat Assistance for Quick Queries
                                     </li>
                                     <li className="d-flex align-items-start mb-2">
-                                        <img src={icon1} alt="check" className="me-2 mt-1" />
+                                        <img src={icon1} alt="check" className="me-2" />
                                         In-App Notifications & Alerts for Faster Resolutions
                                     </li>
                                     <li className="d-flex align-items-start mb-2">
-                                        <img src={icon1} alt="check" className="me-2 mt-1" />
+                                        <img src={icon1} alt="check" className="me-2" />
                                         Automatic Case Escalation and Tracking
                                     </li>
                                     <li className="d-flex align-items-start">
-                                        <img src={icon1} alt="check" className="me-2 mt-1" />
+                                        <img src={icon1} alt="check" className="me-2" />
                                         Dedicated Support Dashboard with Analytics
                                     </li>
                                 </ul>
