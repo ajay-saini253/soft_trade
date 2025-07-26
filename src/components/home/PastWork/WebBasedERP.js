@@ -46,7 +46,7 @@ const WebBaseERP = () => {
               <Fade direction="up" triggerOnce={false} duration={1200} delay={9}>
                 <div className="my-3">
                   <h2 className="title webbaseerp_heading">
-                      SoftTrade ERP – <span className="yllow_txt">Web Based ERP system </span>for Every Business Size
+                      SoftTrade ERP – <span className="yllow_txt">Web Based ERP System </span>For Every Business Size
                   </h2>
                 </div>
               </Fade>
