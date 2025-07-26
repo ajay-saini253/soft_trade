@@ -511,7 +511,7 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
   color: #333;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     .trusted-customer-box {
         padding: 0;
     }
@@ -575,4 +575,24 @@ background: linear-gradient(to top left, #7e6dc9, #61def9);
 .desktopproducts-link:hover{
   background-color: #cbe7f8;
   color:black;
+}
+
+
+
+@media (max-width: 767.98px) {
+
+  .products-section{
+    padding-left:10px ;
+     padding-right:10px ;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .download-android-application {
+    width: 100%;
+}
+
 }

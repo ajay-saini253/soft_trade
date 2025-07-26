@@ -25,7 +25,7 @@ const DesktopProducts = () => {
                 <strong>Version:</strong> 2.01{" "}
                 <strong>Release Date:</strong> 15-Jul 2025
               </p>
-              <p className='text-black'>
+              <p className='text-black text-justify'>
                 Plus Accounting Software is Easy & Advanced general purpose
                 accounting software with Audit trail, secured data backup on your
                 own Google Drive account and other many unique features like
@@ -121,7 +121,7 @@ const DesktopProducts = () => {
                 <strong>Version:</strong> 2.01{" "}
                 <strong>Release Date:</strong> 15-Jul 2025
               </p>
-              <p className='text-black'>
+              <p className='text-black text-justify'>
                 Plus Accounting Software is Easy & Advanced general purpose
                 accounting software with Audit trail, secured data backup on your
                 own Google Drive account and other many unique features like
@@ -217,7 +217,7 @@ const DesktopProducts = () => {
                 <strong>Version:</strong> 2.01{" "}
                 <strong>Release Date:</strong> 15-Jul 2025
               </p>
-              <p className='text-black'>
+              <p className='text-black text-justify'>
                 Plus Accounting Software is Easy & Advanced general purpose
                 accounting software with Audit trail, secured data backup on your
                 own Google Drive account and other many unique features like
@@ -313,7 +313,7 @@ const DesktopProducts = () => {
                 <strong>Version:</strong> 2.01{" "}
                 <strong>Release Date:</strong> 15-Jul 2025
               </p>
-              <p className='text-black'>
+              <p className='text-black text-justify'>
                 Plus Accounting Software is Easy & Advanced general purpose
                 accounting software with Audit trail, secured data backup on your
                 own Google Drive account and other many unique features like
@@ -396,7 +396,7 @@ const DesktopProducts = () => {
 
 
       <div className="container pb-5">
-      <div className="row">
+      <div className="row products-section">
         <div className="col-md-3 col-sm-12 text-center mb-4">
           <img src={product1} alt="Plus Logo" className="img-fluid" />
         </div>
@@ -405,18 +405,18 @@ const DesktopProducts = () => {
           <p className='py-2'><strong>Version :</strong> <strong>Release Date :</strong></p>
           <h4 className="mb-4">E-Commerce Solution</h4>
 
-          <p className='py-2'>
+          <p className='py-text-justify '>
             * Plus Retail E-Commerce application is a platform where sellers can offer their products to users of the
             Plus Retail application by registering with the Plus Retail Application.
           </p>
 
-          <p className='py-2'>
+          <p className='py-2 text-justify'>
             * Vendors can showcase their products in the Plus Retail application and sell online using the Plus
             E-Commerce platform. Plus Retail provides an opportunity for local business owners to offer a facility
             where customers can view and order products online from the comfort of their home with doorstep delivery.
           </p>
 
-          <p className='py-2'>
+          <p className='py-2 text-justify'>
             * Users can download the application for free, register with a vendor using their ID, and view products,
             offers, discounts, and place orders directly from their mobile.
           </p>
@@ -437,7 +437,7 @@ const DesktopProducts = () => {
           </ul>
 
           <h4 className='py-2'>Install Plus Retail app for unique benefits</h4>
-          <p className='py-3'>
+          <p className='py-3 text-justify'>
             Simply download the Plus Retail app on your device (phone or tablet) and create an account by entering the
             vendor ID. You'll be taken to the Home screen with links to all category products, along with amazing offers,
             deals, and discounts uploaded by the vendor.
