@@ -4,6 +4,12 @@ import ListItem from "@mui/material/List";
 import Collapse from "@mui/material/Collapse";
 import { Link } from "react-router-dom";
 
+import icon2 from '../../../images/icon/m_01.svg';
+import icon3 from '../../../images/icon/m_02.svg';
+import icon4 from '../../../images/icon/m_03.svg';
+import icon5 from '../../../images/icon/m_04.svg';
+
+
 const menus = [
     {
         id: 1,
@@ -19,22 +25,26 @@ const menus = [
             {
                 id: 31,
                 title: 'About Us',
-                link: '/about'
+                link: '/about',
+                img:icon2
             },
             {
                 id: 3222,
                 title: 'Customer Stories',
-                link: '/customer-stories'
+                link: '/customer-stories',
+                img:icon5
             },
             {
                 id: 322,
                 title: 'Awards & Achievements',
-                link: '/awards'
+                link: '/awards',
+                img:icon3
             },
             {
                 id: 345,
                 title: 'Career & Job',
-                link: '/career'
+                link: '/career',
+                img:icon4
             }
         ]
     },
@@ -158,7 +168,7 @@ const MobileMenu = () => {
                                                     return (
                                                         <ListItem key={i}>
                                                             <Link onClick={ClickHandler} className="active"
-                                                                to={submenu.link}>{submenu.title}</Link>
+                                                                to={submenu.link}><img src={submenu.img} alt={submenu.title} className='me-2' />{submenu.title}</Link>
                                                         </ListItem>
                                                     )
                                                 })}
