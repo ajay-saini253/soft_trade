@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { FaCalendarAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import icon2 from '../../../images/icon/m_01.svg';
-import icon3 from '../../../images/icon/m_02.svg';
-import icon4 from '../../../images/icon/m_03.svg';
-import icon5 from '../../../images/icon/m_04.svg';
+
+// import icon2 from '../../../images/icon/m_01.svg';
+// import icon3 from '../../../images/icon/m_02.svg';
+// import icon4 from '../../../images/icon/m_03.svg';
+// import icon5 from '../../../images/icon/m_04.svg';
 import logo from '../../../images/logo/softtrade-infotech-pvt-ltd-ambab.webp';
 import logo2 from '../../../images/logo/softtrade-infotech-pvt-ltd-ambab.webp';
 // import clogo1 from '../../../images/logo/client-logo.svg';
@@ -22,7 +23,7 @@ import careerImg from '../../../images/header/Career & Job.png';
 const Header = () => {
   const [mobileActive, setMobileActive] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  const [selectedAbout, setSelectedAbout] = useState('about');
+  // const [selectedAbout, setSelectedAbout] = useState('about');
   // const [selectedResources, setSelectedResources] = useState('training');
 
   const handleScroll = useCallback(() => {
@@ -122,6 +123,7 @@ const Header = () => {
                       </li>
                 </ul>
                 <ul className='header_menu_border-top'>
+                 
                   <li><Link onClick={clickHandler} to="/" className=''>Home</Link></li>
                   <li className="menu-item-has-children megamenu">
                     <Link onClick={clickHandler} to="/about">About Us</Link>
