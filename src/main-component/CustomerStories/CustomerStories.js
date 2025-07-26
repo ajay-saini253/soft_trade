@@ -7,13 +7,14 @@ import Testimonial1 from './Testimonial1';
 import Testimonial2 from './Testimonial2';
 // import Testimonial3 from './Testimonial3';
 import TestimonialHero from './TestimonialHero';
-
+import TopBar from '../../components/home/TopBar/TopBar';
 
 export default function CustomerStories() {
    
     return (
          <Fragment>
             <div className='body_wrap sco_agency'>
+                <TopBar/>
                 <Header />
                 <TestimonialHero/>
                 <Testimonial/>

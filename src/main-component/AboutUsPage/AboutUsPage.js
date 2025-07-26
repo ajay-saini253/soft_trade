@@ -17,12 +17,15 @@ import GallerySection from '../CareerPage/Gallery';
 import hImg1 from '../../images/about/AboutUs-01.png';
 import Feature1 from './Features1';
 import MissionVision from './MissionVission';
+import TopBar from '../../components/home/TopBar/TopBar';
 
 const AboutUsPage = (props) => {
 
     return (
         <Fragment>
             <div className='body_wrap sco_agency'>
+              <TopBar/>
+
                 <Header />
                 <section className="page-title pt-10 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">

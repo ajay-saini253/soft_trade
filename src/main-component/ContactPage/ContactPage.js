@@ -13,12 +13,14 @@ import bImg2 from '../../images/shape/brd_shape.png'
 import Achievements from '../../components/ContactUs/Achievements/Achievements';
 import BrandSection from '../../components/ContactUs/BrandSection/BrandSection';
 import FeatureSection from '../../components/ContactUs/FeatureSection/FeatureSection';
+import TopBar from '../../components/home/TopBar/TopBar';
 
 const TeamPage = (props) => {
 
     return (
         <Fragment>
             <div className='body_wrap sco_agency'>
+                 <TopBar/>
                 <Header />
                 <section className="page-title  pt-70 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
