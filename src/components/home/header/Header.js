@@ -14,11 +14,11 @@ import logo2 from '../../../images/logo/softtrade-infotech-pvt-ltd-ambab.webp';
 // import quote from '../../../images/icon/quote.png';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
-// ✅ Replace these with your actual image paths
-import aboutImg from '../../../images/header/About Us.png';
-import customerImg from '../../../images/header/Customer Stories.png';
-import awardsImg from '../../../images/header/Awards & Achievements.png';
-import careerImg from '../../../images/header/Career & Job.png';
+
+// import aboutImg from '../../../images/header/About Us.png';
+// import customerImg from '../../../images/header/Customer Stories.png';
+// import awardsImg from '../../../images/header/Awards & Achievements.png';
+// import careerImg from '../../../images/header/Career & Job.png';
 
 const Header = () => {
   const [mobileActive, setMobileActive] = useState(false);
@@ -38,32 +38,32 @@ const Header = () => {
   const clickHandler = () => window.scrollTo(10, 0);
   // const submitHandler = (e) => e.preventDefault();
 
-  const aboutMenuContent = {
-    about: {
-      title: 'About Us',
-      heading: 'About Soft Trade',
-      image: aboutImg,
-      link: '/about',
-    },
-    customer: {
-      title: 'Customer Stories',
-      heading: 'Trusted by Customers',
-      image: customerImg,
-      link: '/customer-stories',
-    },
-    awards: {
-      title: 'Awards & Achievements',
-      heading: 'Recognized Excellence',
-      image: awardsImg,
-      link: '/awards',
-    },
-    career: {
-      title: 'Career & Job',
-      heading: 'Join Our Team',
-      image: careerImg,
-      link: '/career',
-    },
-  };
+  // const aboutMenuContent = {
+  //   about: {
+  //     title: 'About Us',
+  //     heading: 'About Soft Trade',
+  //     image: aboutImg,
+  //     link: '/about',
+  //   },
+  //   customer: {
+  //     title: 'Customer Stories',
+  //     heading: 'Trusted by Customers',
+  //     image: customerImg,
+  //     link: '/customer-stories',
+  //   },
+  //   awards: {
+  //     title: 'Awards & Achievements',
+  //     heading: 'Recognized Excellence',
+  //     image: awardsImg,
+  //     link: '/awards',
+  //   },
+  //   career: {
+  //     title: 'Career & Job',
+  //     heading: 'Join Our Team',
+  //     image: careerImg,
+  //     link: '/career',
+  //   },
+  // };
    const ClickHandler = () => {
         window.scrollTo(10, 0);
     };
@@ -206,7 +206,7 @@ const Header = () => {
                   {/* Product */}
 
                   <li className="">
-                    <Link onClick={clickHandler} to="/desktop-software">Desktop software</Link>
+                    <Link onClick={clickHandler} to="/desktop-software">Desktop Software</Link>
                     {/* <ul className="submenu">
                       <li>
                         <div className="mega_menu_wrapper">

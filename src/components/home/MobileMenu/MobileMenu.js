@@ -40,8 +40,8 @@ const menus = [
     },
     {
         id: 3,
-        title: 'Products',
-        link: '/products',
+        title: 'Desktop Software',
+        link: '/desktop-software',
         // submenu: [
         //     {
         //         id: 51,
@@ -60,13 +60,9 @@ const menus = [
         title: 'ERP',
         link: '/',
     },
+ 
     {
         id: 5,
-        title: 'Segments',
-        link: '/',
-    },
-    {
-        id: 6,
         title: 'Download',
         link: '/dowmload',
         submenu: [
@@ -88,7 +84,7 @@ const menus = [
         ]
     },
     {
-        id: 7,
+        id: 6,
         title: 'Partners',
         link: '/',
         submenu: [
