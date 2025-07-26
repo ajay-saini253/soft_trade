@@ -41,7 +41,7 @@ const Footer = (props) => {
                             </div>
                             <div className="xb-item--holder ms-3">
                                 <p className="xb-item--content">Call Us</p>
-                                <h4 className="xb-item--list lh-1">+91 4567554534</h4>
+                                <h4 className="xb-item--list lh-1">+91-6350436408</h4>
                             </div>
                         </div>
                         <div className=" ul_li my-4">

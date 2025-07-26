@@ -4908,7 +4908,7 @@ body[data-aos-easing=ease] [data-aos] {
   display: inline-block;
   letter-spacing: 0.01em;
   color: var(--color-white);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -4933,7 +4933,7 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .main-menu ul li.menu-item-has-children>a span::after {
-  content: "+";
+  /* content: "+"; */
   display: inline-block;
   padding-left: 6px;
 }
@@ -22605,4 +22605,10 @@ img.black-icon {
   }
 }
 
+.main-menu__wrap .header_menu_border-top li  a:hover{
+color:#fdb714 !important;
+}
 
+.main-menu__wrap .main-manu-top li  a:hover{
+color:#fdb714 !important;
+}
